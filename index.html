@@ -1,64 +1,10 @@
-<!doctype HTML>
-<html>
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>syswraith</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<style>
-
-
-		@font-face {
-			font-family: terminalTTY;
-			src: url(Modeseven-L3n5.ttf);
-		}
-		* { color:#00ff00; text-align: center; }
-		body {
-			user-select: none;
-			margin: auto;
-			background-color: black;
-			font-family: terminalTTY, 'Courier New', Courier, monospace;
-			height: 90vh;
-			width: 50vw;
-		}
-
-		main {
-			height: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		main img {
-			height: 200px;
-			width: 200px;
-			border: #00ff00 solid 5px;
-			-webkit-user-drag: none;
-		}
-	</style>
-</head>
-
-<body>
-	<main>
-		<div>
-			<p id="odate"></p>
-			<img src="ben.png" alt="ben">
-			<h1 id="olink"><u>Syswraith</u></h1>
-			<audio id="oaudio" preload src="music.mp3" loop></audio>
-		</div>
-	</main>
-	<script>
-		let date = new Date();
-		console.log(date)
-		document.getElementById('odate').innerText = `${date.getDate()}:${date.getMonth()}:${date.getFullYear()}`
-		document.getElementById('olink').addEventListener('click', ()=>{
-			let audio = document.getElementById('oaudio')
-			if (audio.paused){ audio.play(); audio.volume = 1; console.log(audio.volume) }
-			else { audio.pause() }
-		}); 
-	</script>
-</body>
-
-</html>
+<!--minimalist code-->
+<style>html{max-width: 60vw; margin: auto; color-scheme: dark light;}</style><meta name="viewport" content="width=device-width, initial-scale=1"/><br><h1>syswraith</h1><h3><i>[sis-raith] Newspeak </i></h3><hr><p>(pn.) a lazy, jacket-wrapped, always-online tech hermit.</p><dl><dt><b>Personality</b></dt><dd>Appreciates free wifi access and soda.</dd><dd>Happy to help with tech related stuff (if asked nicely).</dd><dd>Believes that a person should always be wrapped in a jacket, in order to distinguish themselves from parrots.</dd><br><dt><b>Languages tried</b></dt><dd>python</dd><dd>javascript</dd><dd>perl</dd><dd>php</dd><dd>lua</dd><dd>bash</dd><br><pre>
+-----BEGIN GEEK CODE BLOCK-----
+Version: 3.1
+GO d? s:-(-) a--- C++ UL P+ L++ 
+E--- !W+++ !N o+ K--? !w !O !M 
+!V PS? PE? Y PGP !t 5? !X !R tv+ 
+b+ DI !D G e- h !r z
+------END GEEK CODE BLOCK------
+</pre><br></dl>
