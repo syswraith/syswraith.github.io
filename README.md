@@ -1,7 +1,5 @@
 ![avatar](https://avatars.githubusercontent.com/u/77088155)
 
-# syswraith
-
 **`Level 50`     Wiz-Elf-Mal-Cha**
 
 **Specialises in:** Necromancy, Alchemy, managing Unix-like systems, minimal web development, pentesting, and programming.
