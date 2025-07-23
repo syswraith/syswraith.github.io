@@ -12,3 +12,4 @@
 [Telehack](https://telehack.com/u/rflash)  
 [Mail](mailto:syswraith@proton.me)
 
+Here is my [resume](./resume.pdf)
