@@ -3,6 +3,7 @@
 **`Level 50`     Wiz-Elf-Mal-Cha**
 
 **Specialises in:** Necromancy, Alchemy, managing Unix-like systems, minimal web development, pentesting, and programming.
+  
 **Interested in:** Philosophy, retro tech, world history, books.
 
 > "Some people can read War and Peace and come away thinking it's a simple adventure story. Others can read the ingredients on a chewing gum wrapper and unlock the secrets of the universe."
