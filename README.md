@@ -14,4 +14,3 @@
 [Telehack](https://telehack.com/u/rflash)  
 [Mail](mailto:syswraith@proton.me)
 
-Here is my [resume](https://raw.githubusercontent.com/syswraith/syswraith.github.io/refs/heads/main/resume.pdf)
