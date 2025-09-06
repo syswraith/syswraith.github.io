@@ -14,3 +14,12 @@
 [Telehack](https://telehack.com/u/rflash)  
 [Mail](mailto:syswraith@proton.me)
 
+<br/><br/>
+Here's some relatively cool-ish people who support me
+
+<span style="display:inline-flex;gap:8px;align-items:center">
+  <a href="https://tervicke.github.io" target="_blank" rel="noopener noreferrer"><img src="https://github.com/tervicke.png" style="height:50px;border-radius:0" alt="@tervicke"></a>
+  <a href="https://niharikapaygude.github.io" target="_blank" rel="noopener noreferrer"><img src="https://github.com/niharikapaygude.png" style="height:50px;border-radius:0" alt="@niharikapaygude"></a>
+  <a href="https://dhruvmarulkar.github.io" target="_blank" rel="noopener noreferrer"><img src="https://github.com/dhruvmarulkar.png" style="height:50px;border-radius:0" alt="@dhruvmarulkar"></a>
+  <a href="https://ferroflux.github.io" target="_blank" rel="noopener noreferrer"><img src="https://github.com/ferroflux.png" style="height:50px;border-radius:0" alt="@ferroflux"></a>
+</span>
