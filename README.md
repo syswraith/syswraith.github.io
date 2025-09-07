@@ -2,11 +2,11 @@
 
 **`Level 50`     Wiz-Elf-Mal-Cha**
 
+[GitHub](https://github.com/syswraith)  [Blog](https://syswraith.github.io/blog)  [Telegram](https://t.me/syswraith)  [Telehack](https://telehack.com/u/rflash)  [Mail](mailto:syswraith@proton.me)
+
 **Specialises in:** Necromancy, Alchemy, managing Unix-like systems, minimal web development, pentesting, and programming.
  
 **Interested in:** Philosophy, retro tech, world history, books.
-
-[GitHub](https://github.com/syswraith)  [Blog](https://syswraith.github.io/blog)  [Telegram](https://t.me/syswraith)  [Telehack](https://telehack.com/u/rflash)  [Mail](mailto:syswraith@proton.me)
 
 > "Some people can read War and Peace and come away thinking it's a simple adventure story. Others can read the ingredients on a chewing gum wrapper and unlock the secrets of the universe."
 
