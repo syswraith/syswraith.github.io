@@ -8,7 +8,8 @@
 [GitHub](https://github.com/syswraith)  [Blog](https://syswraith.github.io/blog)  [Telegram](https://t.me/syswraith)  [Telehack](https://telehack.com/u/rflash)  [Mail](mailto:syswraith@proton.me)
 
 > "Some people can read War and Peace and come away thinking it's a simple adventure story. Others can read the ingredients on a chewing gum wrapper and unlock the secrets of the universe."
-<br/><br/>
+
+<br>
 Here are some relatively cool-ish people who support me
 
 <span style="display:inline-flex;gap:8px;align-items:center">
