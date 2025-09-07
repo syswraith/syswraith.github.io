@@ -3,19 +3,13 @@
 **`Level 50`     Wiz-Elf-Mal-Cha**
 
 **Specialises in:** Necromancy, Alchemy, managing Unix-like systems, minimal web development, pentesting, and programming.
-  
 **Interested in:** Philosophy, retro tech, world history, books.
 
+[GitHub](https://github.com/syswraith)  [Blog](https://syswraith.github.io/blog)  [Telegram](https://t.me/syswraith)  [Telehack](https://telehack.com/u/rflash)  [Mail](mailto:syswraith@proton.me)
+
 > "Some people can read War and Peace and come away thinking it's a simple adventure story. Others can read the ingredients on a chewing gum wrapper and unlock the secrets of the universe."
-
-[GitHub](https://github.com/syswraith)  
-[Blog](https://syswraith.github.io/blog)  
-[Telegram](https://t.me/syswraith)  
-[Telehack](https://telehack.com/u/rflash)  
-[Mail](mailto:syswraith@proton.me)
-
 <br/><br/>
-Here's some relatively cool-ish people who support me
+Here are some relatively cool-ish people who support me
 
 <span style="display:inline-flex;gap:8px;align-items:center">
   <a href="https://tervicke.github.io" target="_blank" rel="noopener noreferrer"><img src="https://github.com/tervicke.png" style="height:50px;border-radius:0" alt="@tervicke"></a>
