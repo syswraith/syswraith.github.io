@@ -1,5 +1,10 @@
 ---
-title: Home
+title: "syswraith"
+description: "Internet's own boy"
+permalink: /
+author: "syswraith"
+sitemap: true
+robots: index, follow
 ---
 
 ![avatar](https://avatars.githubusercontent.com/u/77088155)
