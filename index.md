@@ -5,7 +5,9 @@ permalink: /
 author: "syswraith"
 sitemap: true
 robots: index, follow
+image: "https://avatars.githubusercontent.com/u/77088155"
 ---
+
 
 ![avatar](https://avatars.githubusercontent.com/u/77088155)
 
