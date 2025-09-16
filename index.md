@@ -17,7 +17,7 @@ image: "https://avatars.githubusercontent.com/u/77088155"
 
 **Specialises in:** Necromancy, Alchemy, managing Unix-like systems, minimal web development, pentesting, and programming.
  
-**Interested in:** Philosophy, retro tech, world history, books.
+**Interested in:** Philosophy, space, retro tech, world history and books.
 
 > "Some people can read War and Peace and come away thinking it's a simple adventure story. Others can read the ingredients on a chewing gum wrapper and unlock the secrets of the universe."
 
