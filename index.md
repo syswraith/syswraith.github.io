@@ -30,4 +30,5 @@ Here are some relatively cool-ish people who support me
   <a href="https://dhruvmarulkar.github.io" target="_blank" rel="noopener noreferrer"><img src="https://github.com/dhruvmarulkar.png" style="height:50px;border-radius:0" alt="@dhruvmarulkar"></a>
   <a href="https://ferroflux.github.io" target="_blank" rel="noopener noreferrer"><img src="https://github.com/ferroflux.png" style="height:50px;border-radius:0" alt="@ferroflux"></a>
   <a href="https://faizanfirdousi.vercel.app" target="_blank" rel="noopener noreferrer"><img src="https://github.com/faizanfirdousi.png" style="height:50px;border-radius:0" alt="@faizanfirdousi"></a>
+  <a href="https://atharvadixit987-crypto.github.io/atharva-portfolio/" target="_blank" rel="noopener noreferrer"><img src="https://github.com/atharvadixit987-crypto.png" style="height:50px;border-radius:0" alt="@atharvadixit"></a>
 </span>
