@@ -21,7 +21,7 @@ body {
 
 [GitHub](https://github.com/syswraith)  [Blog](https://syswraith.github.io/blog)  [Telegram](https://t.me/syswraith)  [Telehack](https://telehack.com/u/rflash)  [Mail](mailto:syswraith@proton.me)
 
-**Specialises in:** Necromancy, Alchemy, managing Unix-like systems, minimal web development, pentesting, and programming.
+**Specialises in:** Necromancy, Alchemy, managing Unix-like systems, minimal web development,<br/> pentesting, and programming.
 
 **Interested in:** Philosophy, space, retro tech, world history and books.
 
