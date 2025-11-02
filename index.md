@@ -8,6 +8,13 @@ robots: index, follow
 image: "https://avatars.githubusercontent.com/u/77088155"
 ---
 
+<style>
+body {
+  place-items: center;
+  text-align: center;
+}
+</style>
+
 <img src='https://avatars.githubusercontent.com/u/77088155' height='300'/>
 
 **`Level 50`     Wiz-Elf-Mal-Cha**
