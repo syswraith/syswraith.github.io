@@ -8,7 +8,7 @@ robots: index, follow
 image: "https://avatars.githubusercontent.com/u/77088155"
 ---
 
-<img src='https://avatars.githubusercontent.com/u/77088155' height='500'/>
+<img src='https://avatars.githubusercontent.com/u/77088155' height='300'/>
 
 **`Level 50`     Wiz-Elf-Mal-Cha**
 
@@ -20,10 +20,10 @@ image: "https://avatars.githubusercontent.com/u/77088155"
 
 > "Some people can read War and Peace and come away thinking it's a simple adventure story. Others can read the ingredients on a chewing gum wrapper and unlock the secrets of the universe."
 
+<!--
 <br>
 Here are some relatively cool-ish people who support me
 
-<!--
 <span style="display:inline-flex;gap:8px;align-items:center">
   <a href="https://tervicke.github.io" target="_blank" rel="noopener noreferrer"><img src="https://github.com/tervicke.png" style="height:50px;border-radius:0" alt="@tervicke"></a>
   <a href="https://niharikapaygude.github.io" target="_blank" rel="noopener noreferrer"><img src="https://github.com/niharikapaygude.png" style="height:50px;border-radius:0" alt="@niharikapaygude"></a>
