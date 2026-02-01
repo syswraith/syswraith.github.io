@@ -32,15 +32,19 @@ Interested in philosophy, space, retro tech, world history, and books.
 
 ### [Ryukendo](https://github.com/syswraith/ryukendo)
 *Wordlist generator • Python*  
+A wordlist generator that leverages social connections to produce candidate passwords. Uses cartesian products, permutations & combinations and probability distributions to generate, sort and rank possible passwords.
 
 ### [Elanor](https://github.com/syswraith/elanor)
-*Static site generator • Python*
+*Static site generator • Python*  
+A minimalistic static site generator supporting Markdown, syntax highlighting, KaTeX rendering, frontmatter parsing and 22 classless themes.
 
 ### [Ngzl](https://github.com/syswraith/ngzl)
-*IRC C2 prototype • Python*
+*IRC C2 prototype • Python*  
+A prototype botnet script using the IRC protocol as command-and-control. Implements a client–server model with custom sockets for receiving shell commands and relaying output through an IRC server.
 
 ### [WhatsApp Chat Summariser](https://github.com/syswraith/wa-chat-summariser)
-*Chat summarisation pipeline • Node.js*
+*Chat summarisation pipeline • Node.js*  
+A chat summary service that pulls messages, sends them to a local LLM, and returns notifications via a publish–subscribe system. Built using Axios, whatsapp-web.js, NTFY, Ollama, and Deepseek-r1:7b.
 
 ---
 
