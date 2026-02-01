@@ -124,13 +124,12 @@ A chat summary service that pulls messages, sends them to a local LLM, and retur
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/syswraith.png" />
 
-<img src="https://kaworu.love/seele.gif" height="240"/>
-
 ![CLI](https://telehack.com/cmd.svg)
 ![Glider](https://web.badges.world/badges/memes/hackergliderbutton_80x15.png)
 ![Kopimi](https://kopimi.com/badges/c_mini_34.gif)
 ![Vim Heretic](https://www.vim.org/images/vim_on_fire.gif)
 
+<img src="https://kaworu.love/seele.gif" height="240"/>
 ---
 
 > “Some people can read War and Peace and come away thinking it’s a simple adventure story. Others can read the ingredients on a chewing gum wrapper and unlock the secrets of the universe.”
