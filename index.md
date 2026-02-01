@@ -5,7 +5,7 @@ description: Necromancy, Alchemy, Unix-like systems, minimal web dev, pentesting
 ---
 
 <p align="center">
-  <img src="https://github.com/syswraith.png" height="260" alt="Syswraith Avatar"/>
+  <img src="https://github.com/syswraith.png" height="260" alt="Profile picture" style="border-radius: 5px;"/>
 </p>
 
 # Syswraith
