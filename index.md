@@ -19,7 +19,7 @@ Interested in philosophy, space, retro tech, world history, and books.
 
 ## Links
 
-- [website](https://syswraith.com)  
+- [this website](https://syswraith.com)  
 - [blog](https://syswraith.com/blog)  
 - [github](https://github.com/syswraith)  
 - [telegram](https://t.me/syswraith)  
