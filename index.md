@@ -12,7 +12,7 @@ description: Necromancy, Alchemy, Unix-like systems, minimal web dev, pentesting
 
 **Level 50:** chaotic elven male wizard
 
-Specialises in **Necromancy, Alchemy, Unix-like systems, minimal web development, pentesting, and programming.**  
+Specialises in Necromancy, Alchemy, **Unix-like systems, minimal web development, pentesting, and programming.**  
 Interested in philosophy, space, retro tech, world history, and books.
 
 ---
