@@ -3,6 +3,7 @@ layout: default
 title: Syswraith
 description: Necromancy, Alchemy, Unix-like systems, minimal web dev, pentesting, programming.
 ---
+<link href="http://a-dma.github.io/gruvbox-css/gruvbox-dark-medium.min.css" rel="stylesheet"></link>
 
 <p align="center">
   <img src="https://github.com/syswraith.png" height="260" alt="Profile picture" style="border-radius: 5px;"/>
