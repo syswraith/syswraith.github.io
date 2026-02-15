@@ -9,7 +9,7 @@
   <!-- Meta -->
   <meta name="description" content="Specializes in necromancy, alchemy, Unix-like systems, minimal web development, pentesting, and programming. Interested in philosophy, space, retro tech, world history, and books.">
   <meta name="author" content="Syswraith">
-  <meta name="theme-color" content="#242424">
+  <meta name="theme-color" content="#282828">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Syswraith">
@@ -33,26 +33,32 @@
   <link rel="icon" media="(prefers-color-scheme: dark)" href="favicon.ico">
 
   <style>
+    /* Gruvbox dark */
     :root {
-      --bg: #242424;
-      --fg: rgba(255, 255, 255, 0.87);
-      --meta: rgba(255, 255, 255, 0.75);
-      --muted: rgba(255, 255, 255, 0.7);
-      --border: rgba(255, 255, 255, 0.04);
-      --card: rgba(255, 255, 255, 0.02);
-      --code-bg: #1a1a1a;
-      --code-fg: #d4b67f;
+      --bg: #282828;
+      --fg: #ebdbb2;
+      --meta: #d5c4a1;
+      --muted: #a89984;
+      --border: #504945;
+      --card: #3c3836;
+      --code-bg: #3c3836;
+      --code-fg: #fabd2f;
+      --accent: #83a598;
+      --accent-hover: #458588;
     }
 
+    /* Gruvbox light */
     html.light {
-      --bg: #ffffff;
-      --fg: #213547;
-      --meta: rgba(0, 0, 0, 0.7);
-      --muted: rgba(0, 0, 0, 0.6);
-      --border: rgba(0, 0, 0, 0.1);
-      --card: rgba(0, 0, 0, 0.02);
-      --code-bg: #f4f4f4;
-      --code-fg: #d6336c;
+      --bg: #fbf1c7;
+      --fg: #3c3836;
+      --meta: #504945;
+      --muted: #7c6f64;
+      --border: #d5c4a1;
+      --card: #ebdbb2;
+      --code-bg: #ebdbb2;
+      --code-fg: #b57614;
+      --accent: #076678;
+      --accent-hover: #427b58;
     }
 
     body {
@@ -74,7 +80,7 @@
       font-size: 3em;
       margin: 0;
       padding: 0;
-      color: #7d83ff;
+      color: var(--accent);
     }
 
     .header-meta {
@@ -90,12 +96,12 @@
     }
 
     a {
-      color: #646cff;
+      color: var(--accent);
       text-decoration: none;
     }
 
     a:hover {
-      color: #535bf2;
+      color: var(--accent-hover);
     }
 
     img {
@@ -118,7 +124,7 @@
     }
 
     html.light .status-box {
-      color: hsl(190, 50%, 25%);
+      color: #076678;
     }
 
     .grid {
@@ -165,8 +171,8 @@
       right: 1rem;
       backdrop-filter: blur(10px) saturate(180%);
       -webkit-backdrop-filter: blur(10px) saturate(180%);
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: var(--card);
+      border: 1px solid var(--border);
       border-radius: 50%;
       width: 42px;
       height: 42px;
@@ -181,7 +187,7 @@
     }
 
     .theme-toggle:hover {
-      background: rgba(255, 255, 255, 0.2);
+      background: var(--border);
       transform: scale(1.05);
     }
 
