@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'Junicode';
+  src: url('https://cdn.jsdelivr.net/gh/psb1558/Junicode-font@master/webfiles/JunicodeVF-Roman.woff2') format('woff2-variations'),
+       url('https://cdn.jsdelivr.net/gh/psb1558/Junicode-font@master/webfiles/JunicodeVF-Roman.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Junicode';
+  src: url('https://cdn.jsdelivr.net/gh/psb1558/Junicode-font@master/webfiles/JunicodeVF-Italic.woff2') format('woff2-variations'),
+       url('https://cdn.jsdelivr.net/gh/psb1558/Junicode-font@master/webfiles/JunicodeVF-Italic.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Gruvbox dark */
+:root {
+  --bg: #282828;
+  --fg: #ebdbb2;
+  --meta: #d5c4a1;
+  --muted: #a89984;
+  --border: #504945;
+  --card: #3c3836;
+  --code-bg: #3c3836;
+  --code-fg: #fabd2f;
+  --accent: #83a598;
+  --accent-hover: #458588;
+}
+
+/* Gruvbox light */
+html.light {
+  --bg: #fbf1c7;
+  --fg: #3c3836;
+  --meta: #504945;
+  --muted: #7c6f64;
+  --border: #d5c4a1;
+  --card: #ebdbb2;
+  --code-bg: #ebdbb2;
+  --code-fg: #b57614;
+  --accent: #076678;
+  --accent-hover: #427b58;
+}
+
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--fg);
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+h1 {
+  font-family: 'Junicode', serif;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  font-size: 3em;
+  margin: 0.2rem 0 0.5rem;
+  padding: 0;
+  color: var(--accent);
+}
+
+nav {
+  margin-bottom: 1.25rem;
+  font-size: 1.2rem;
+}
+
+.header-meta {
+  color: var(--meta);
+  margin-bottom: 1.25rem;
+}
+
+code {
+  color: var(--code-fg);
+  background: var(--code-bg);
+  padding: 0.15em 0.3em;
+  border-radius: 4px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+.avatar {
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  width: min(850px, 94%);
+  box-sizing: border-box;
+}
+
+.status-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  border-radius: 16px;
+}
+
+html.light .status-box {
+  color: #076678;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  text-align: left;
+  padding: 0.9rem;
+  border-radius: 8px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition:
+    background 0.3s,
+    border 0.3s;
+}
+
+.card h3 {
+  margin: 0 0 0.35rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.small {
+  font-size: 0.9rem;
+  color: var(--fg);
+  opacity: 0.8;
+}
+
+.bio {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+
+blockquote {
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  z-index: 9999;
+  color: var(--fg);
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--border);
+  transform: scale(1.05);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.badges img {
+  margin-top: 0;
+  height: 28px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--fg);
+}
+
+.pentesting-table {
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+}
+
+.pentesting-table img {
+  height: 100px;
+  margin: 0.25rem;
+}
+
+.other-badges {
+  margin: 1.5rem 0;
+}
+
+.other-badges img {
+  margin: 0.25rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tippy JS custom styles */
+.tippy-box[data-theme~="gruvbox"] {
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--border);
+}
+.tippy-box[data-theme~="gruvbox"] > .tippy-arrow::before {
+  color: var(--card);
+}

@@ -1,0 +1,258 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Projects • Syswraith</title>
+    <!-- Meta -->
+    <meta
+      content="Syswraith's projects, including wordlist generators, ciphers, botnets, interpreters, and scrapers."
+      name="description"
+    />
+    <meta content="Syswraith" name="author" />
+    <meta
+      content="cybersecurity, security tools, wordlist generator, reverse engineering, web scrapers, command-and-control, programming projects"
+      name="keywords"
+    />
+    <meta content="#282828" name="theme-color" />
+    <!-- Open Graph -->
+    <meta content="Projects • Syswraith" property="og:title" />
+    <meta
+      content="Explore Syswraith's security tools, terminal games, interpreters, and scrapers."
+      property="og:description"
+    />
+    <meta
+      content="https://avatars.githubusercontent.com/u/77088155"
+      property="og:image"
+    />
+    <meta content="https://syswraith.com/projects" property="og:url" />
+    <meta content="website" property="og:type" />
+    <!-- Twitter -->
+    <meta content="summary" name="twitter:card" />
+    <meta content="Projects • Syswraith" name="twitter:title" />
+    <meta
+      content="Explore Syswraith's security tools, terminal games, interpreters, and scrapers."
+      name="twitter:description"
+    />
+    <meta
+      content="https://avatars.githubusercontent.com/u/77088155"
+      name="twitter:image"
+    />
+    <meta content="@syswraith" name="twitter:creator" />
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <!-- Optional: Dark/light adaptive favicon -->
+    <link
+      href="favicon-light.ico"
+      media="(prefers-color-scheme: light)"
+      rel="icon"
+    />
+    <link href="favicon.ico" media="(prefers-color-scheme: dark)" rel="icon" />
+
+    <link href="https://unpkg.com/tippy.js@6/dist/tippy.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      /* Page-specific styling if needed, otherwise matches style.css */
+      .back-nav {
+        margin-bottom: 2rem;
+      }
+      .projects-container {
+        margin-top: 3.5rem;
+      }
+      .grid {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-toggle" id="toggleTheme">☀️</button>
+    <div class="container projects-container">
+      <h1>Projects</h1>
+      <nav class="back-nav">
+        <a href="index.html">Home</a> ·
+        <a href="https://github.com/syswraith">GitHub</a> ·
+        <a href="https://syswraith.github.io/blog">Blog</a> ·
+        <a href="https://t.me/syswraith">Telegram</a> ·
+        <a href="https://x.com/syswraith">Twitter</a> ·
+        <a href="mailto:syswraith@proton.me">Mail</a>
+      </nav>
+
+      <div class="grid" id="projects">
+        <div class="card">
+          <h3>
+            <a href="https://github.com/syswraith/ryukendo" target="_blank"
+              >Ryukendo</a
+            >
+          </h3>
+          <div class="meta">Wordlist generator • Python</div>
+          <p class="small">
+            A wordlist generator that leverages social connections to produce
+            candidate passwords. Uses cartesian products, permutations &amp;
+            combinations and probability distributions to generate, sort and
+            rank possible passwords.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <h3>
+            <a href="https://github.com/syswraith/ngzl" target="_blank">Ngzl</a>
+          </h3>
+          <div class="meta">IRC C2 prototype • Python</div>
+          <p class="small">
+            A prototype botnet script using the IRC protocol as
+            command-and-control. Implements a client–server model with custom
+            sockets for receiving shell commands and relaying output through an
+            IRC server.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <a
+              href="https://github.com/syswraith/wa-chat-summariser"
+              target="_blank"
+              >WhatsApp Chat Summariser</a
+            >
+          </h3>
+          <div class="meta">Chat summarisation pipeline • Node.js</div>
+          <p class="small">
+            A chat summary service that pulls messages, sends them to a local
+            LLM, and returns notifications via a publish–subscribe system. Built
+            using Axios, whatsapp-web.js, NTFY, Ollama, and Deepseek-r1:7b.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <a href="https://github.com/syswraith/logo-interpreter" target="_blank"
+              >Logo Interpreter</a
+            >
+          </h3>
+          <div class="meta">Interpreter • TypeScript</div>
+          <p class="small">
+            A minimalistic Microsoft Logo interpreter featuring a custom tokenizer,
+            recursive parser, AST generator, and an HTML5 Canvas drawing engine
+            with angle-based turtle movement.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <a href="https://github.com/syswraith/moodle-scraper" target="_blank"
+              >Moodle Scraper</a
+            >
+          </h3>
+          <div class="meta">Web scraper • Python</div>
+          <p class="small">
+            A proof-of-concept data extraction tool for retrieving public profile
+            details from a private Moodle instance. Handles login token
+            authentication and stores the extracted data in a local SQLite
+            database.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <a href="https://github.com/syswraith/hashing-implementations" target="_blank"
+              >Hashing Implementations</a
+            >
+          </h3>
+          <div class="meta">Data structures • C</div>
+          <p class="small">
+            Implementations of basic hashing concepts and collision resolution
+            techniques, including chaining using linked lists, linear probing,
+            and quadratic probing, in memory-safe C.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <a href="https://github.com/syswraith/bus-reservation-system" target="_blank"
+              >Bus Reservation System</a
+            >
+          </h3>
+          <div class="meta">Terminal application • C</div>
+          <p class="small">
+            A terminal-based bus reservation system written in C, featuring
+            interactive seat selection and formatted CLI layouts.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <a href="https://github.com/syswraith/dots-and-boxes" target="_blank"
+              >Dots and Boxes</a
+            >
+          </h3>
+          <div class="meta">Terminal game • Python</div>
+          <p class="small">
+            A command-line implementation of the classic Dots and Boxes board
+            game, focusing on custom grid and connection logic.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <a href="https://github.com/syswraith/drunken-bishop" target="_blank"
+              >Drunken Bishop</a
+            >
+          </h3>
+          <div class="meta">Key visualizer • C</div>
+          <p class="small">
+            An implementation of the Drunken Bishop algorithm used by OpenSSH to
+            generate ASCII art representations of cryptographic keys.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <a href="https://github.com/syswraith/tic-tac-toe" target="_blank"
+              >Tic Tac Toe</a
+            >
+          </h3>
+          <div class="meta">Terminal game • C</div>
+          <p class="small">
+            A command-line Tic Tac Toe game written in C, featuring a board state
+            managed using a flattened 2D array.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Persistent theme toggle script
+      const btn = document.getElementById("toggleTheme");
+      
+      // Initialize theme based on localStorage or system preferences
+      if (localStorage.getItem("theme") === "light" || 
+          (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+        document.documentElement.classList.add("light");
+        btn.textContent = "🌙";
+      } else {
+        document.documentElement.classList.remove("light");
+        btn.textContent = "☀️";
+      }
+
+      btn.addEventListener("click", () => {
+        document.documentElement.classList.toggle("light");
+        const isLight = document.documentElement.classList.contains("light");
+        btn.textContent = isLight ? "🌙" : "☀️";
+        localStorage.setItem("theme", isLight ? "light" : "dark");
+      });
+    </script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+      tippy("[data-tippy-content]", {
+        theme: "gruvbox",
+        animation: "scale",
+        arrow: true,
+        delay: [100, 0],
+      });
+    </script>
+  </body>
+</html>

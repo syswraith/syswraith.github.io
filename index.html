@@ -1,655 +1,95 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Syswraith</title>
-    <!-- Meta -->
-    <meta
-      content="Specializes in necromancy, alchemy, Unix-like systems, minimal web development, pentesting, and programming. Interested in philosophy, space, retro tech, world history, and books."
-      name="description"
-    />
-    <meta content="Syswraith" name="author" />
-    <meta
-      content="cybersecurity, offensive security, malware analysis, web security, network security, reverse engineering, exploit development, python security tools, web scraping, botnets, automation, infosec, blog"
-      name="keywords"
-    />
-    <meta content="#282828" name="theme-color" />
-    <!-- Open Graph -->
-    <meta content="Syswraith" property="og:title" />
-    <meta
-      content="Specializes in necromancy, alchemy, Unix-like systems, minimal web development, pentesting, and programming. Interested in philosophy, space, retro tech, world history, and books."
-      property="og:description"
-    />
-    <meta
-      content="https://avatars.githubusercontent.com/u/77088155"
-      property="og:image"
-    />
-    <meta content="https://syswraith.com/" property="og:url" />
-    <meta content="website" property="og:type" />
-    <!-- Twitter -->
-    <meta content="summary" name="twitter:card" />
-    <meta content="Syswraith" name="twitter:title" />
-    <meta
-      content="Specializes in necromancy, alchemy, Unix-like systems, minimal web development, pentesting, and programming. Interested in philosophy, space, retro tech, world history, and books."
-      name="twitter:description"
-    />
-    <meta
-      content="https://avatars.githubusercontent.com/u/77088155"
-      name="twitter:image"
-    />
-    <meta content="@syswraith" name="twitter:creator" />
-    <!-- Favicon -->
-    <link href="favicon.ico" rel="icon" type="image/x-icon" />
-    <!-- Optional: Dark/light adaptive favicon -->
-    <link
-      href="favicon-light.ico"
-      media="(prefers-color-scheme: light)"
-      rel="icon"
-    />
-    <link href="favicon.ico" media="(prefers-color-scheme: dark)" rel="icon" />
-    <style>
-      /* Gruvbox dark */
-      :root {
-        --bg: #282828;
-        --fg: #ebdbb2;
-        --meta: #d5c4a1;
-        --muted: #a89984;
-        --border: #504945;
-        --card: #3c3836;
-        --code-bg: #3c3836;
-        --code-fg: #fabd2f;
-        --accent: #83a598;
-        --accent-hover: #458588;
-      }
 
-      /* Gruvbox light */
-      html.light {
-        --bg: #fbf1c7;
-        --fg: #3c3836;
-        --meta: #504945;
-        --muted: #7c6f64;
-        --border: #d5c4a1;
-        --card: #ebdbb2;
-        --code-bg: #ebdbb2;
-        --code-fg: #b57614;
-        --accent: #076678;
-        --accent-hover: #427b58;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Syswraith</title>
+  <!-- Meta -->
+  <meta
+    content="Specializes in necromancy, alchemy, Unix-like systems, minimal web development, pentesting, and programming. Interested in philosophy, space, retro tech, world history, and books."
+    name="description" />
+  <meta content="Syswraith" name="author" />
+  <meta
+    content="cybersecurity, offensive security, malware analysis, web security, network security, reverse engineering, exploit development, python security tools, web scraping, botnets, automation, infosec, blog"
+    name="keywords" />
+  <meta content="#282828" name="theme-color" />
+  <!-- Open Graph -->
+  <meta content="Syswraith" property="og:title" />
+  <meta
+    content="Specializes in necromancy, alchemy, Unix-like systems, minimal web development, pentesting, and programming. Interested in philosophy, space, retro tech, world history, and books."
+    property="og:description" />
+  <meta content="https://avatars.githubusercontent.com/u/77088155" property="og:image" />
+  <meta content="https://syswraith.com/" property="og:url" />
+  <meta content="website" property="og:type" />
+  <!-- Twitter -->
+  <meta content="summary" name="twitter:card" />
+  <meta content="Syswraith" name="twitter:title" />
+  <meta
+    content="Specializes in necromancy, alchemy, Unix-like systems, minimal web development, pentesting, and programming. Interested in philosophy, space, retro tech, world history, and books."
+    name="twitter:description" />
+  <meta content="https://avatars.githubusercontent.com/u/77088155" name="twitter:image" />
+  <meta content="@syswraith" name="twitter:creator" />
+  <!-- Favicon -->
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  <!-- Optional: Dark/light adaptive favicon -->
+  <link href="favicon-light.ico" media="(prefers-color-scheme: light)" rel="icon" />
+  <link href="style.css" rel="stylesheet" />
+</head>
 
-      body {
-        font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-        line-height: 1.5;
-        color: var(--fg);
-        background-color: var(--bg);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        margin: 0.5vh;
-        text-align: center;
-        transition:
-          background-color 0.3s,
-          color 0.3s;
-      }
-
-      h1 {
-        font-size: 3em;
-        margin: 0;
-        padding: 0;
-        color: var(--accent);
-      }
-
-      .header-meta {
-        color: var(--meta);
-        margin-bottom: 1.25rem;
-      }
-
-      code {
-        color: var(--code-fg);
-        background: var(--code-bg);
-        padding: 0.15em 0.3em;
-        border-radius: 4px;
-      }
-
-      a {
-        color: var(--accent);
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: var(--accent-hover);
-      }
-
-      img {
-        border-radius: 10px;
-        margin-top: 3.5rem;
-      }
-
-      .container {
-        width: min(850px, 94%);
-        box-sizing: border-box;
-      }
-
-      .status-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        margin: 1rem;
-        border-radius: 16px;
-      }
-
-      html.light .status-box {
-        color: #076678;
-      }
-
-      .grid {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: 1fr;
-      }
-
-      .card {
-        text-align: left;
-        padding: 0.9rem;
-        border-radius: 8px;
-        background: var(--card);
-        border: 1px solid var(--border);
-        transition:
-          background 0.3s,
-          border 0.3s;
-      }
-
-      .card h3 {
-        margin: 0 0 0.35rem;
-      }
-
-      .meta {
-        font-size: 0.9rem;
-        color: var(--muted);
-        margin-bottom: 0.5rem;
-      }
-
-      .small {
-        font-size: 0.9rem;
-        color: var(--fg);
-        opacity: 0.8;
-      }
-
-      blockquote {
-        font-style: italic;
-        opacity: 0.8;
-        margin-top: 1.25rem;
-        margin-bottom: 3rem;
-      }
-
-      .theme-toggle {
-        position: fixed;
-        top: 1rem;
-        right: 1rem;
-        backdrop-filter: blur(10px) saturate(180%);
-        -webkit-backdrop-filter: blur(10px) saturate(180%);
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 50%;
-        width: 42px;
-        height: 42px;
-        z-index: 9999;
-        color: var(--fg);
-        cursor: pointer;
-        font-size: 1.1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-      }
-
-      .theme-toggle:hover {
-        background: var(--border);
-        transform: scale(1.05);
-      }
-
-      .badges {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        justify-content: center;
-        margin: 1.5rem 0;
-      }
-
-      .badges img {
-        margin-top: 0;
-        height: 28px;
-      }
-
-      .section-title {
-        font-size: 1.5em;
-        margin-top: 2rem;
-        margin-bottom: 0.75rem;
-        color: var(--fg);
-      }
-
-      .pentesting-table {
-        margin: 1.5rem auto;
-        border-collapse: collapse;
-      }
-
-      .pentesting-table img {
-        height: 100px;
-        margin: 0.25rem;
-      }
-
-      .other-badges {
-        margin: 1.5rem 0;
-      }
-
-      .other-badges img {
-        margin: 0.25rem;
-        vertical-align: middle;
-      }
-
-      @media (min-width: 700px) {
-        .grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-    </style>
-
-    <link href="https://unpkg.com/tippy.js@6/dist/tippy.css" rel="stylesheet" />
-    <style>
-      .tippy-box[data-theme~="gruvbox"] {
-        background: var(--card);
-        color: var(--fg);
-        border: 1px solid var(--border);
-      }
-      .tippy-box[data-theme~="gruvbox"] > .tippy-arrow::before {
-        color: var(--card);
-      }
-    </style>
-  </head>
-  <body>
-    <button class="theme-toggle" id="toggleTheme">☀️</button>
-    <div class="container">
-      <img
-        alt="syswraith avatar"
-        height="300"
-        src="https://avatars.githubusercontent.com/u/77088155"
-      />
-      <h1><a href="https://syswraith.com/">Syswraith</a></h1>
-      <nav>
-        <a href="https://github.com/syswraith">GitHub</a> ·
-        <a href="https://syswraith.github.io/blog">Blog</a> ·
-        <a href="https://t.me/syswraith">Telegram</a> ·
-        <a href="https://x.com/syswraith">Twitter</a> ·
-        <a href="mailto:syswraith@proton.me">Mail</a> ·
-        <a href="https://hachyderm.io/@syswraith">Mastodon</a> ·
-        <a href="https://youtube.com/@syswraith">YouTube</a>
-      </nav>
-      <div class="status-box">
-        <span><strong>Level 50:</strong></span>
-        <span>chaotic elven male wizard</span>
-      </div>
-      <p class="lead">
-        Specialises in Necromancy, Alchemy, managing Unix-like systems, minimal
-        web development, pentesting, and programming. Interested in philosophy,
-        space, retro tech, world history, and books.
-      </p>
-      <div class="grid" id="projects">
-        <div class="card">
-          <h3>
-            <a href="https://github.com/syswraith/ryukendo" target="_blank"
-              >Ryukendo</a
-            >
-          </h3>
-          <div class="meta">Wordlist generator • Python</div>
-          <p class="small">
-            A wordlist generator that leverages social connections to produce
-            candidate passwords. Uses cartesian products, permutations &amp;
-            combinations and probability distributions to generate, sort and
-            rank possible passwords.
-          </p>
-        </div>
-        <div class="card">
-          <h3>
-            <a href="https://github.com/syswraith/elanor" target="_blank"
-              >Elanor</a
-            >
-          </h3>
-          <div class="meta">Static site generator • Python</div>
-          <p class="small">
-            A minimalistic static site generator supporting Markdown, syntax
-            highlighting, KaTeX rendering, frontmatter parsing and 22 classless
-            themes.
-          </p>
-        </div>
-        <div class="card">
-          <h3>
-            <a href="https://github.com/syswraith/ngzl" target="_blank">Ngzl</a>
-          </h3>
-          <div class="meta">IRC C2 prototype • Python</div>
-          <p class="small">
-            A prototype botnet script using the IRC protocol as
-            command-and-control. Implements a client–server model with custom
-            sockets for receiving shell commands and relaying output through an
-            IRC server.
-          </p>
-        </div>
-        <div class="card">
-          <h3>
-            <a
-              href="https://github.com/syswraith/wa-chat-summariser"
-              target="_blank"
-              >WhatsApp Chat Summariser</a
-            >
-          </h3>
-          <div class="meta">Chat summarisation pipeline • Node.js</div>
-          <p class="small">
-            A chat summary service that pulls messages, sends them to a local
-            LLM, and returns notifications via a publish–subscribe system. Built
-            using Axios, whatsapp-web.js, NTFY, Ollama, and Deepseek-r1:7b.
-          </p>
-        </div>
-      </div>
-      <h2 class="section-title">Languages</h2>
-      <div class="badges">
-        <img
-          alt="HTML5"
-          src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
-        />
-        <img
-          alt="CSS"
-          src="https://img.shields.io/badge/CSS-blue?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
-        />
-        <img
-          alt="JavaScript"
-          src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
-        />
-        <img
-          alt="PHP"
-          src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&amp;logo=php&amp;logoColor=white"
-        />
-        <img
-          alt="Bash Script"
-          src="https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&amp;logo=gnu-bash&amp;logoColor=white"
-        />
-        <img
-          alt="Markdown"
-          src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&amp;logo=markdown&amp;logoColor=white"
-        />
-        <img
-          alt="Python"
-          src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
-        />
-        <img
-          alt="C"
-          src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&amp;logo=c&amp;logoColor=white"
-        />
-        <img
-          alt="C++"
-          src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&amp;logo=C%2B%2B&amp;logoColor=white"
-        />
-        <img alt="TeleBASIC" src="https://telehack.com/telebasic.svg" />
-      </div>
-      <h2 class="section-title">Systems &amp; Tools</h2>
-      <div class="badges">
-        <img
-          alt="Linux"
-          src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black"
-        />
-        <img
-          alt="Android"
-          src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&amp;logo=android&amp;logoColor=white"
-        />
-        <img
-          alt="Arch"
-          src="https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&amp;logoColor=fff&amp;style=for-the-badge"
-        />
-        <img
-          alt="Debian"
-          src="https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&amp;logo=debian&amp;logoColor=white"
-        />
-        <img
-          alt="Kali"
-          src="https://img.shields.io/badge/Kali-268BEE?style=for-the-badge&amp;logo=kalilinux&amp;logoColor=white"
-        />
-        <img
-          alt="Gnome"
-          src="https://img.shields.io/badge/gnome-blue?style=for-the-badge&amp;logo=gnome&amp;logoColor=white"
-        />
-        <img
-          alt="NodeJS"
-          src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&amp;logo=node.js&amp;logoColor=white"
-        />
-        <img
-          alt="Bun"
-          src="https://img.shields.io/badge/bun-282a36?style=for-the-badge&amp;logo=bun&amp;logoColor=fbf0df"
-        />
-        <img
-          alt="Git"
-          src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
-        />
-        <img
-          alt="Raspberry Pi"
-          src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&amp;logo=Raspberry-Pi"
-        />
-        <img
-          alt="TOR"
-          src="https://img.shields.io/badge/tor-%237E4798.svg?style=for-the-badge&amp;logo=tor-project&amp;logoColor=white"
-        />
-        <img alt="Telehack" src="https://telehack.com/telehack.svg" />
-        <img
-          alt="GitHub"
-          src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
-        />
-        <img
-          alt="Github Pages"
-          src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&amp;logo=github&amp;logoColor=white"
-        />
-        <img
-          alt="Docker"
-          src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&amp;logo=docker&amp;logoColor=white"
-        />
-        <img
-          alt="CodePen"
-          src="https://img.shields.io/badge/Codepen-000000?style=for-the-badge&amp;logo=codepen&amp;logoColor=white"
-        />
-        <img
-          alt="LeetCode"
-          src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&amp;logo=LeetCode&amp;logoColor=#d16c06"
-        />
-        <img
-          alt="Codeforces"
-          src="https://img.shields.io/badge/Codeforces-445f9d?style=for-the-badge&amp;logo=Codeforces&amp;logoColor=white"
-        />
-        <img
-          alt="CodeChef"
-          src="https://img.shields.io/badge/CodeChef-%23964B00.svg?style=for-the-badge&amp;logo=CodeChef&amp;logoColor=white"
-        />
-        <img
-          alt="Vim"
-          src="https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&amp;logo=vim&amp;logoColor=white"
-        />
-        <img
-          alt="Neovim"
-          src="https://img.shields.io/badge/NeoVim-%2357A143.svg?style=for-the-badge&amp;logo=neovim&amp;logoColor=white"
-        />
-        <img
-          alt="Obsidian"
-          src="https://img.shields.io/badge/Obsidian-%23483699.svg?style=for-the-badge&amp;logo=obsidian&amp;logoColor=white"
-        />
-        <img
-          alt="Wikipedia"
-          src="https://img.shields.io/badge/Wikipedia-%23000000.svg?style=for-the-badge&amp;logo=wikipedia&amp;logoColor=white"
-        />
-        <img
-          alt="Raspberry Pi"
-          src="https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&amp;logo=Raspberry-Pi"
-        />
-        <img
-          alt="Arduino"
-          src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&amp;logo=Arduino&amp;logoColor=white"
-        />
-        <img
-          alt="Kdenlive"
-          src="https://img.shields.io/badge/Kdenlive-ffffff?style=for-the-badge&amp;logo=kdenlive"
-        />
-        <img
-          alt="Audacity"
-          src="https://img.shields.io/badge/Audacity-0000CC?style=for-the-badge&amp;logo=kdenlive"
-        />
-      </div>
-      <h2 class="section-title">Pentesting Suite</h2>
-      <table class="pentesting-table">
-        <tr>
-          <td>
-            <img
-              alt="netcat"
-              data-tippy-content="Netcat • TCP/UDP networking utility"
-              height="100"
-              src="https://www.kali.org/tools/netcat/images/netcat-logo.svg"
-            />
-          </td>
-          <td>
-            <img
-              alt="john"
-              data-tippy-content="John the Ripper • Password auditing and cracking"
-              height="100"
-              src="https://www.kali.org/tools/john/images/john-logo.svg"
-            />
-          </td>
-          <td>
-            <img
-              alt="hydra"
-              data-tippy-content="Hydra • Login brute forcing"
-              height="100"
-              src="https://www.kali.org/tools/hydra/images/hydra-logo.svg"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img
-              alt="ffuf"
-              data-tippy-content="FFUF • Fast web fuzzer"
-              height="100"
-              src="https://www.kali.org/tools/ffuf/images/ffuf-logo.svg"
-            />
-          </td>
-          <td>
-            <img
-              alt="gobuster"
-              data-tippy-content="Gobuster • Content enumeration"
-              height="100"
-              src="https://www.kali.org/tools/gobuster/images/gobuster-logo.svg"
-            />
-          </td>
-          <td>
-            <img
-              alt="hashcat"
-              data-tippy-content="Hashcat • Password recovery"
-              height="100"
-              src="https://www.kali.org/tools/hashcat/images/hashcat-logo.svg"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img
-              alt="wpscan"
-              data-tippy-content="WPScan • WordPress security scanner"
-              height="100"
-              src="https://www.kali.org/tools/wpscan/images/wpscan-logo.svg"
-            />
-          </td>
-          <td>
-            <img
-              alt="nmap"
-              data-tippy-content="Nmap • Network discovery and port scanning"
-              height="100"
-              src="https://www.kali.org/tools/nmap/images/nmap-logo.svg"
-            />
-          </td>
-          <td>
-            <img
-              alt="metasploit"
-              data-tippy-content="Metasploit • Exploitation framework"
-              height="100"
-              src="https://www.kali.org/tools/metasploit-framework/images/metasploit-framework-logo.svg"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img
-              alt="burpsuite"
-              data-tippy-content="Burp Suite • Web application testing"
-              height="100"
-              src="https://www.kali.org/tools/burpsuite/images/burpsuite-logo.svg"
-            />
-          </td>
-          <td>
-            <img
-              alt="ghidra"
-              data-tippy-content="Ghidra • Reverse engineering suite"
-              height="100"
-              src="https://www.kali.org/tools/ghidra/images/ghidra-logo.svg"
-            />
-          </td>
-          <td>
-            <img
-              alt="wireshark"
-              data-tippy-content="Wireshark • Packet analyzer"
-              height="100"
-              src="https://www.kali.org/tools/wireshark/images/wireshark-logo.svg"
-            />
-          </td>
-        </tr>
-      </table>
-      <h2 class="section-title">Other</h2>
-      <div class="other-badges">
-        <img
-          alt="TryHackMe"
-          src="https://tryhackme-badges.s3.amazonaws.com/syswraith.png"
-        />
-        <br />
-        <img alt="CLI" src="https://telehack.com/cmd.svg" />
-        <img
-          src="https://images.weserv.nl/?url=www.catb.org/hacker-emblem/hacker.png"
-        />
-        <img alt="Kopimi" src="https://kopimi.com/badges/c_mini_34.gif" />
-        <img
-          alt="Vim Heretic"
-          src="https://www.vim.org/images/vim_on_fire.gif"
-        />
-      </div>
-      <blockquote>
-        "Some people can read War and Peace and come away thinking it's a simple
-        adventure story. Others can read the ingredients on a chewing gum
-        wrapper and unlock the secrets of the universe."
-      </blockquote>
+<body>
+  <button class="theme-toggle" id="toggleTheme">☀️</button>
+  <div class="container">
+    <img alt="syswraith avatar" class="avatar" height="300" src="https://avatars.githubusercontent.com/u/77088155" />
+    <h1><a href="https://syswraith.com/">Syswraith</a></h1>
+    <nav>
+      <a href="projects.html">Projects</a> ·
+      <a href="https://github.com/syswraith">GitHub</a> ·
+      <a href="https://syswraith.github.io/blog">Blog</a>
+    </nav>
+    <div class="status-box">
+      <span><strong>Level 50:</strong></span>
+      <span>chaotic elven male wizard</span>
     </div>
-    <script>
-      const btn = document.getElementById("toggleTheme");
-      btn.addEventListener("click", () => {
-        document.documentElement.classList.toggle("light");
-        btn.textContent = document.documentElement.classList.contains("light")
-          ? "🌙"
-          : "☀️";
-      });
-    </script>
 
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script>
-      tippy("[data-tippy-content]", {
-        theme: "gruvbox",
-        animation: "scale",
-        arrow: true,
-        delay: [100, 0],
-      });
-    </script>
-  </body>
+    <section class="bio">
+      <p>I'm a 20 y/o software engineer and cybersecurity researcher who loves building tools, automating workflows, and
+        digging into complex systems. I enjoy CTFs, low‑level programming, cryptography, and minimal web dev, plus I’m
+        passionate about WWII history, space, retro tech, calligraphy, photography, and the outdoors.</p>
+    </section>
+    <p>Find me on <a href="https://t.me/syswraith">Telegram</a>, <a href="https://x.com/syswraith">Twitter</a>, <a
+        href="https://hachyderm.io/@syswraith">Mastodon</a>, <a href="https://youtube.com/@syswraith">YouTube</a> or
+      drop a mail at <a href="mailto:syswraith@proton.me">syswraith@proton.me</a>.</p>
+    <blockquote>
+      "Some people can read War and Peace and come away thinking it's a simple
+      adventure story. Others can read the ingredients on a chewing gum
+      wrapper and unlock the secrets of the universe."
+    </blockquote>
+  </div>
+  <script>
+    // Persistent theme toggle script
+    const btn = document.getElementById("toggleTheme");
+
+    // Initialize theme based on localStorage or system preferences
+    if (localStorage.getItem("theme") === "light" ||
+      (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+      document.documentElement.classList.add("light");
+      btn.textContent = "🌙";
+    } else {
+      document.documentElement.classList.remove("light");
+      btn.textContent = "☀️";
+    }
+
+    btn.addEventListener("click", () => {
+      document.documentElement.classList.toggle("light");
+      const isLight = document.documentElement.classList.contains("light");
+      btn.textContent = isLight ? "🌙" : "☀️";
+      localStorage.setItem("theme", isLight ? "light" : "dark");
+    });
+  </script>
+
+
+</body>
+
 </html>
