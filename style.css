@@ -253,6 +253,12 @@ blockquote {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 600px) {
+  body {
+    margin: 0 1rem;
+  }
+}
+
 
 /* Tippy JS custom styles */
 .tippy-box[data-theme~="gruvbox"] {
