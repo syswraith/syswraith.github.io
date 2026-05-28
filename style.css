@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Junicode';
   src: url('https://cdn.jsdelivr.net/gh/psb1558/Junicode-font@master/webfiles/JunicodeVF-Roman.woff2') format('woff2-variations'),
-       url('https://cdn.jsdelivr.net/gh/psb1558/Junicode-font@master/webfiles/JunicodeVF-Roman.woff2') format('woff2');
+    url('https://cdn.jsdelivr.net/gh/psb1558/Junicode-font@master/webfiles/JunicodeVF-Roman.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: 'Junicode';
   src: url('https://cdn.jsdelivr.net/gh/psb1558/Junicode-font@master/webfiles/JunicodeVF-Italic.woff2') format('woff2-variations'),
-       url('https://cdn.jsdelivr.net/gh/psb1558/Junicode-font@master/webfiles/JunicodeVF-Italic.woff2') format('woff2');
+    url('https://cdn.jsdelivr.net/gh/psb1558/Junicode-font@master/webfiles/JunicodeVF-Italic.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -106,10 +106,6 @@ a:hover {
 
 }
 
-
-  0%, 100% { box-shadow: 0 0 0 0 var(--accent); }
-  50% { box-shadow: 0 0 15px 8px var(--accent); }
-}
 
 .container {
   width: min(850px, 94%);
@@ -253,6 +249,7 @@ blockquote {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 600px) {
   body {
     margin: 0 1rem;
@@ -266,7 +263,8 @@ blockquote {
   color: var(--fg);
   border: 1px solid var(--border);
 }
-.tippy-box[data-theme~="gruvbox"] > .tippy-arrow::before {
+
+.tippy-box[data-theme~="gruvbox"]>.tippy-arrow::before {
   color: var(--card);
 }
 
@@ -312,4 +310,12 @@ a::-moz-selection {
 html.light a::-moz-selection {
   background: var(--accent);
   color: var(--bg);
+}
+
+/* Responsive avatar size */
+@media (max-width: 600px) {
+  .avatar {
+    height: 100px;
+    width: 100px;
+  }
 }
