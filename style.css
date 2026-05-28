@@ -101,9 +101,8 @@ a:hover {
 }
 
 .avatar {
-  border-radius: 10px;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  margin: 0;
 }
 
 .container {
@@ -257,4 +256,48 @@ blockquote {
 }
 .tippy-box[data-theme~="gruvbox"] > .tippy-arrow::before {
   color: var(--card);
+}
+
+/* Invert selected text colors */
+::selection {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+html.light ::selection {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* Firefox */
+::-moz-selection {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+html.light ::-moz-selection {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* Link-specific selection (blue background, page background text) */
+a::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+html.light a::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Firefox link-specific selection */
+a::-moz-selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+html.light a::-moz-selection {
+  background: var(--accent);
+  color: var(--bg);
 }
