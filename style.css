@@ -53,8 +53,8 @@ body {
   flex-direction: column;
   align-items: center;
   /* removed justify-content:center to avoid extra space */
-  height: 100vh; /* fill viewport */
-  overflow: hidden; /* hide scrollbars */
+  min-height: 100vh; /* ensure at least viewport height */
+  overflow-y: auto; /* enable vertical scrolling when needed */
   margin: 0;
   padding: 0; /* removed extra padding */
   box-sizing: border-box;
@@ -257,7 +257,7 @@ blockquote {
     justify-content: center; /* vertical centering on phones */
     margin: 0;
     padding: 0;
-    overflow: hidden; /* keep scrollbars hidden */
+    overflow-y: auto; /* enable vertical scrolling on small screens */
   }
   .container {
     margin-top: 0; /* remove extra top margin on small screens */
