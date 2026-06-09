@@ -39,7 +39,7 @@
 </head>
 
 <body>
-  <button class="theme-toggle" id="toggleTheme">☀️</button>
+  <button class="theme-toggle" id="toggleTheme">🌚</button>
   <div class="container">
     <img alt="syswraith avatar" class="avatar" height="300" src="https://avatars.githubusercontent.com/u/77088155" />
     <h1><a href="https://syswraith.com/">Syswraith</a></h1>
@@ -71,16 +71,16 @@
     if (localStorage.getItem("theme") === "light" ||
       (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: light)").matches)) {
       document.documentElement.classList.add("light");
-      btn.textContent = "🌙";
+      btn.textContent = "🌝";
     } else {
       document.documentElement.classList.remove("light");
-      btn.textContent = "☀️";
+      btn.textContent = "🌚";
     }
 
     btn.addEventListener("click", () => {
       document.documentElement.classList.toggle("light");
       const isLight = document.documentElement.classList.contains("light");
-      btn.textContent = isLight ? "🌙" : "☀️";
+      btn.textContent = isLight ? "🌝" : "🌚";
       localStorage.setItem("theme", isLight ? "light" : "dark");
     });
   </script>
