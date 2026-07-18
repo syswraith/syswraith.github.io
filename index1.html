@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Syswraith</title>
+  <!-- Meta -->
+  <meta
+    content="Specializes in necromancy, alchemy, Unix-like systems, minimal web development, pentesting, and programming. Interested in philosophy, space, retro tech, world history, and books."
+    name="description" />
+  <meta content="Syswraith" name="author" />
+  <meta
+    content="cybersecurity, offensive security, malware analysis, web security, network security, reverse engineering, exploit development, python security tools, web scraping, botnets, automation, infosec, blog"
+    name="keywords" />
+  <meta content="#282828" name="theme-color" />
+  <!-- Open Graph -->
+  <meta content="Syswraith" property="og:title" />
+  <meta
+    content="Specializes in necromancy, alchemy, Unix-like systems, minimal web development, pentesting, and programming. Interested in philosophy, space, retro tech, world history, and books."
+    property="og:description" />
+  <meta content="https://avatars.githubusercontent.com/u/77088155" property="og:image" />
+  <meta content="https://syswraith.com/" property="og:url" />
+  <meta content="website" property="og:type" />
+  <!-- Twitter -->
+  <meta content="summary" name="twitter:card" />
+  <meta content="Syswraith" name="twitter:title" />
+  <meta
+    content="Specializes in necromancy, alchemy, Unix-like systems, minimal web development, pentesting, and programming. Interested in philosophy, space, retro tech, world history, and books."
+    name="twitter:description" />
+  <meta content="https://avatars.githubusercontent.com/u/77088155" name="twitter:image" />
+  <meta content="@syswraith" name="twitter:creator" />
+  <!-- Favicon -->
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  <!-- Optional: Dark/light adaptive favicon -->
+  <link href="favicon-light.ico" media="(prefers-color-scheme: light)" rel="icon" />
+  <link href="style1.css" rel="stylesheet" />
+</head>
+
+<body>
+  <button class="theme-toggle" id="toggleTheme">🌚</button>
+  <div class="container">
+    <img alt="syswraith avatar" class="avatar" height="300" width="300"
+      src="https://wsrv.nl/?url=avatars.githubusercontent.com/u/77088155&w=300&h=300&fit=cover&output=webp&q=85&default=https://avatars.githubusercontent.com/u/77088155" />
+    <h1><a href="https://syswraith.com/">Syswraith</a></h1>
+    <nav>
+      <a href="projects.html">Projects</a> ·
+      <a href="https://github.com/syswraith">GitHub</a> ·
+      <a href="https://syswraith.github.io/blog">Blog</a>
+    </nav>
+
+
+    <section class="bio">
+      <p>I'm a 20 y/o software engineer and cybersecurity researcher who loves building tools, automating workflows, and
+        digging into complex systems. I enjoy CTFs, low‑level programming, cryptography, and minimal web dev, plus I’m
+        passionate about WWII history, space, retro tech, calligraphy, photography, and the outdoors.</p>
+    </section>
+    <p>Find me on <a href="https://x.com/syswraith">Twitter</a>, <a href="https://youtube.com/@syswraith">YouTube</a> or
+      drop a mail at <a href="mailto:syswraith@proton.me">syswraith@proton.me</a>.</p>
+    <blockquote>
+      "Some people can read War and Peace and come away thinking it's a simple
+      adventure story. Others can read the ingredients on a chewing gum
+      wrapper and unlock the secrets of the universe."
+    </blockquote>
+  </div>
+  <script>
+    // Persistent theme toggle script
+    const btn = document.getElementById("toggleTheme");
+
+    // Initialize theme based on localStorage or system preferences
+    if (localStorage.getItem("theme") === "light" ||
+      (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+      document.documentElement.classList.add("light");
+        btn.textContent = "🌚";
+    } else {
+      document.documentElement.classList.remove("light");
+        btn.textContent = "🌝";
+    }
+
+    btn.addEventListener("click", () => {
+      document.documentElement.classList.toggle("light");
+      const isLight = document.documentElement.classList.contains("light");
+        btn.textContent = isLight ? "🌚" : "🌝";
+      localStorage.setItem("theme", isLight ? "light" : "dark");
+    });
+  </script>
+
+
+</body>
+
+</html>
