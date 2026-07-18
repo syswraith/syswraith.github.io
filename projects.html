@@ -64,19 +64,26 @@
 
     <div class="grid" id="projects">
 
+
+<div class="card">
+        <h3>
+          <a href="https://github.com/syswraith/heimdall" target="_blank">Heimdall</a>
+        </h3>
+        <div class="meta">Username enumerator (OSINT) • Go</div>
+        <p class="small">
+        A single-binary tool that hunts down a username's footprint across the web — fast and concurrent by design. Built in Go, it checks presence via raw HTTP, JSON APIs, OpenGraph parsing, and headless/headed browser automation, skipping the need for hand-rolled parsing per site. Results are cached in SQLite, with configs fully YAML-driven for easy extension.
+        </p>
+      </div>
+
+
+
 <div class="card">
         <h3>
           <a href="https://github.com/syswraith/chip8" target="_blank">CHIP-8</a>
         </h3>
         <div class="meta">Emulator / Virtual machine • C</div>
         <p class="small">
-          A CHIP-8 emulator built in C with Raylib for rendering. Implements
-          the full fetch-decode-execute cycle across a custom opcode table,
-          alongside custom display and keypad handling for accurate program
-          execution. Tested with various ROMs including Breakout, Tetris, and
-          Maze. Also features a custom opcode that streams pre-processed
-          1-bit video frames directly into the display buffer, repurposing
-          the sprite pipeline for full-motion playback.
+        A CHIP-8 emulator using Raylib, with a full fetch-decode-execute cycle, custom opcode table, and display/keypad handling. Validated against ROMs like Breakout, Tetris, and Maze — extended with a nonstandard opcode that streams pre-processed 1-bit video into the display buffer for full-motion playback.
         </p>
       </div>
 
