@@ -36,6 +36,8 @@
   <!-- Optional: Dark/light adaptive favicon -->
   <link href="favicon-light.ico" media="(prefers-color-scheme: light)" rel="icon" />
   <link href="style.css" rel="stylesheet" />
+
+  <script src="https://louisabraham.github.io/nekojs/neko.js" data-autostart></script>
 </head>
 
 <body>
@@ -54,7 +56,7 @@
     <section class="bio">
       <p>I'm a 20 y/o software engineer and cybersecurity researcher who loves building tools, automating workflows, and
         digging into complex systems. I enjoy CTFs, low‑level programming, cryptography, and minimal web dev, plus I’m
-        passionate about WWII history, space, retro tech, calligraphy, photography, and the outdoors.</p>
+        passionate about WWII history, space, retro tech, calligraphy and outdoor stuff.</p>
     </section>
     <p>Find me on <a href="https://x.com/syswraith">Twitter</a>, <a href="https://youtube.com/@syswraith">YouTube</a> or
       drop a mail at <a href="mailto:syswraith@proton.me">syswraith@proton.me</a>.</p>
@@ -72,16 +74,16 @@
     if (localStorage.getItem("theme") === "light" ||
       (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: light)").matches)) {
       document.documentElement.classList.add("light");
-        btn.textContent = "🌚";
+      btn.textContent = "🌚";
     } else {
       document.documentElement.classList.remove("light");
-        btn.textContent = "🌝";
+      btn.textContent = "🌝";
     }
 
     btn.addEventListener("click", () => {
       document.documentElement.classList.toggle("light");
       const isLight = document.documentElement.classList.contains("light");
-        btn.textContent = isLight ? "🌚" : "🌝";
+      btn.textContent = isLight ? "🌚" : "🌝";
       localStorage.setItem("theme", isLight ? "light" : "dark");
     });
   </script>
