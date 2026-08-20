@@ -70,9 +70,8 @@
     // Persistent theme toggle script
     const btn = document.getElementById("toggleTheme");
 
-    // Initialize theme based on localStorage or system preferences
-    if (localStorage.getItem("theme") === "light" ||
-      (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+    // Initialize theme based on localStorage only — dark is the default
+    if (localStorage.getItem("theme") === "light") {
       document.documentElement.classList.add("light");
       btn.textContent = "🌚";
     } else {
