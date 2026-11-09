@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+Disallow: /blog/css/*
+Disallow: /blog/dist/*
+Sitemap: https://syswraith.com/blog/sitemap.xml
