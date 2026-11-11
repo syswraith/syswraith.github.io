@@ -56,23 +56,24 @@
   <button class="theme-toggle" id="toggleTheme">🌚</button>
   <div class="container projects-container">
     <h1>Projects</h1>
-    <nav class="back-nav">
+<nav class="back-nav">
       <a href="index.html">Home</a> ·
       <a href="https://github.com/syswraith">GitHub</a> ·
-      <a href="https://syswraith.github.io/blog">Blog</a>
+      <a href="https://syswraith.com/blog">Blog</a> ·
+      <a href="https://youtube.com/@syswraith">YouTube</a> ·
+      <a href="https://x.com/syswraith">Twitter</a> ·
+      <a href="mailto://syswraith@proton.me">Mail</a>
     </nav>
 
     <div class="grid" id="projects">
 
-      <div class="card">
+<div class="card">
         <h3>
-          <a href="https://github.com/syswraith/scoundrel" target="_blank">Scoundrel</a>
+          <a href="https://github.com/syswraith/chip8" target="_blank">CHIP-8</a>
         </h3>
-        <div class="meta">Terminal roguelike card game • C++</div>
+        <div class="meta">Emulator / Virtual machine • C</div>
         <p class="small">
-          A terminal implementation of Zach Gage &amp; Kurt Bieg's 2011 card game <em>Scoundrel</em>, built with FTXUI.
-          Rooms of 4 cards are dealt from a standard 52-card deck—fight monsters (♠ ♣), equip weapons (♦) to reduce damage,
-          and heal with potions (♥). Survive without reaching 0 HP; clear rooms until the deck runs out to win.
+        A CHIP-8 emulator using Raylib, with a full fetch-decode-execute cycle, custom opcode table, and display/keypad handling. Validated against ROMs like Breakout, Tetris, and Maze — extended with a nonstandard opcode that streams pre-processed 1-bit video into the display buffer for full-motion playback.
         </p>
       </div>
 
@@ -96,15 +97,35 @@
         </p>
       </div>
 
-
-
-<div class="card">
+      <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/chip8" target="_blank">CHIP-8</a>
+          <a href="https://github.com/syswraith/decompyler" target="_blank">Decompyler</a>
         </h3>
-        <div class="meta">Emulator / Virtual machine • C</div>
+        <div class="meta">PyInstaller decompiler/disassembler • Python</div>
         <p class="small">
-        A CHIP-8 emulator using Raylib, with a full fetch-decode-execute cycle, custom opcode table, and display/keypad handling. Validated against ROMs like Breakout, Tetris, and Maze — extended with a nonstandard opcode that streams pre-processed 1-bit video into the display buffer for full-motion playback.
+        Extracts PyInstaller-packed EXE and ELF binaries, lists their embedded .pyc modules, and disassembles or decompiles them side by side with pycdas and pycdc. Includes syntax-highlighted source editing, stdlib module hiding, and configurable paths for the pycdc and pycdas binaries.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>
+          <a href="https://github.com/syswraith/scoundrel" target="_blank">Scoundrel</a>
+        </h3>
+        <div class="meta">Terminal roguelike card game • C++</div>
+        <p class="small">
+          A terminal implementation of Zach Gage &amp; Kurt Bieg's 2011 card game <em>Scoundrel</em>, built with FTXUI.
+          Rooms of 4 cards are dealt from a standard 52-card deck—fight monsters (♠ ♣), equip weapons (♦) to reduce damage,
+          and heal with potions (♥). Survive without reaching 0 HP; clear rooms until the deck runs out to win.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>
+          <a href="https://github.com/syswraith/gruvboxify" target="_blank">Gruvboxify</a>
+        </h3>
+        <div class="meta">Image converter • Python</div>
+        <p class="small">
+        Converts batches of PNG, JPEG, WebP, GIF, BMP, and TIFF images to the Gruvbox palette with drag-and-drop file selection and per-file conversion progress. Offers three palettes, EXIF orientation handling, transparency preservation, and NumPy-accelerated matching, with output saved to a persistent folder.
         </p>
       </div>
 
