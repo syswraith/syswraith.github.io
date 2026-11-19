@@ -1,0 +1,34 @@
+name: Generate sitemap
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Generate sitemap
+        run: bunx sitemap-generator-cli https://syswraith.com --filepath sitemap.xml
+      - name: Commit sitemap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          if git diff --cached --quiet; then
+            echo "Sitemap unchanged"
+            exit 0
+          fi
+          git commit -m "Update sitemap [skip ci]"
+          git pull --rebase origin main
+          git push
