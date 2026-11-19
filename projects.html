@@ -30,46 +30,27 @@
   <meta content="@syswraith" name="twitter:creator" />
   <!-- Favicon -->
   <link href="favicon.ico" rel="icon" type="image/x-icon" />
-  <!-- Optional: Dark/light adaptive favicon -->
-  <link href="favicon-light.ico" media="(prefers-color-scheme: light)" rel="icon" />
-  <link href="favicon.ico" media="(prefers-color-scheme: dark)" rel="icon" />
 
   <link href="style.css" rel="stylesheet" />
-  <style>
-    /* Page-specific styling if needed, otherwise matches style.css */
-    .back-nav {
-      margin-bottom: 2rem;
-    }
-
-    .projects-container {
-      margin-top: 3.5rem;
-    }
-
-    .grid {
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-    }
-  </style>
 </head>
 
 <body>
-  <button class="theme-toggle" id="toggleTheme">🌚</button>
+  <button class="theme-toggle" id="toggleTheme" type="button" aria-label="Toggle color theme">🌚</button>
   <div class="container projects-container">
     <h1>Projects</h1>
-<nav class="back-nav">
-      <a href="index.html">Home</a> ·
-      <a href="https://github.com/syswraith">GitHub</a> ·
-      <a href="https://syswraith.com/blog">Blog</a> ·
-      <a href="https://youtube.com/@syswraith">YouTube</a> ·
-      <a href="https://x.com/syswraith">Twitter</a> ·
-      <a href="mailto://syswraith@proton.me">Mail</a>
+    <nav class="back-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="https://syswraith.com/blog">Blog</a></li>
+        <li><a href="https://syswraith.com/notes">Notes</a></li>
+      </ul>
     </nav>
 
     <div class="grid" id="projects">
 
 <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/chip8" target="_blank">CHIP-8</a>
+          <a href="https://github.com/syswraith/chip8" target="_blank" rel="noopener noreferrer">CHIP-8</a>
         </h3>
         <div class="meta">Emulator / Virtual machine • C</div>
         <p class="small">
@@ -79,7 +60,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/jorth" target="_blank">Jorth</a>
+          <a href="https://github.com/syswraith/jorth" target="_blank" rel="noopener noreferrer">Jorth</a>
         </h3>
         <div class="meta">Forth interpreter • JavaScript</div>
         <p class="small">
@@ -89,7 +70,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/heimdall" target="_blank">Heimdall</a>
+          <a href="https://github.com/syswraith/heimdall" target="_blank" rel="noopener noreferrer">Heimdall</a>
         </h3>
         <div class="meta">Username enumerator (OSINT) • Go</div>
         <p class="small">
@@ -99,7 +80,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/decompyler" target="_blank">Decompyler</a>
+          <a href="https://github.com/syswraith/decompyler" target="_blank" rel="noopener noreferrer">Decompyler</a>
         </h3>
         <div class="meta">PyInstaller decompiler/disassembler • Python</div>
         <p class="small">
@@ -109,7 +90,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/scoundrel" target="_blank">Scoundrel</a>
+          <a href="https://github.com/syswraith/scoundrel" target="_blank" rel="noopener noreferrer">Scoundrel</a>
         </h3>
         <div class="meta">Terminal roguelike card game • C++</div>
         <p class="small">
@@ -121,7 +102,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/gruvboxify" target="_blank">Gruvboxify</a>
+          <a href="https://github.com/syswraith/gruvboxify" target="_blank" rel="noopener noreferrer">Gruvboxify</a>
         </h3>
         <div class="meta">Image converter • Python</div>
         <p class="small">
@@ -131,7 +112,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/ryukendo" target="_blank">Ryukendo</a>
+          <a href="https://github.com/syswraith/ryukendo" target="_blank" rel="noopener noreferrer">Ryukendo</a>
         </h3>
         <div class="meta">Wordlist generator • Python</div>
         <p class="small">
@@ -144,7 +125,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/ngzl" target="_blank">Ngzl</a>
+          <a href="https://github.com/syswraith/ngzl" target="_blank" rel="noopener noreferrer">Ngzl</a>
         </h3>
         <div class="meta">IRC C2 prototype • Python</div>
         <p class="small">
@@ -157,7 +138,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/logo" target="_blank">Logo Interpreter</a>
+          <a href="https://github.com/syswraith/logo" target="_blank" rel="noopener noreferrer">Logo Interpreter</a>
         </h3>
         <div class="meta">Interpreter • TypeScript</div>
         <p class="small">
@@ -169,7 +150,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/wintermute" target="_blank">Wintermute</a>
+          <a href="https://github.com/syswraith/wintermute" target="_blank" rel="noopener noreferrer">Wintermute</a>
         </h3>
         <div class="meta">URL shortener • TypeScript + Go</div>
         <p class="small">
@@ -181,7 +162,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/moodle-scraper" target="_blank">Moodle Scraper</a>
+          <a href="https://github.com/syswraith/moodle-scraper" target="_blank" rel="noopener noreferrer">Moodle Scraper</a>
         </h3>
         <div class="meta">Web scraper • Python</div>
         <p class="small">
@@ -194,7 +175,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/c-projects/" target="_blank">Drunken Bishop</a>
+          <a href="https://github.com/syswraith/c-projects/" target="_blank" rel="noopener noreferrer">Drunken Bishop</a>
         </h3>
         <div class="meta">Key visualizer • C</div>
         <p class="small">
@@ -205,7 +186,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/Tervicke/bytecamp-26" target="_blank">AML Shield</a>
+          <a href="https://github.com/Tervicke/bytecamp-26" target="_blank" rel="noopener noreferrer">AML Shield</a>
         </h3>
         <div class="meta">Monitoring platform • JavaScript/TypeScript</div>
         <p class="small">
@@ -216,7 +197,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/vortexa-26" target="_blank">IdentityShield</a>
+          <a href="https://github.com/syswraith/vortexa-26" target="_blank" rel="noopener noreferrer">IdentityShield</a>
         </h3>
         <div class="meta">Auth risk assessment platform • TypeScript</div>
         <p class="small">
@@ -228,7 +209,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/Tervicke/devcraft-orion" target="_blank">Orion</a>
+          <a href="https://github.com/Tervicke/devcraft-orion" target="_blank" rel="noopener noreferrer">Orion</a>
         </h3>
         <div class="meta">Auction system • TypeScript + Go</div>
         <p class="small">
@@ -240,7 +221,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/wa-chat-summariser" target="_blank">WhatsApp Chat Summariser</a>
+          <a href="https://github.com/syswraith/wa-chat-summariser" target="_blank" rel="noopener noreferrer">WhatsApp Chat Summariser</a>
         </h3>
         <div class="meta">Chat summarisation pipeline • Node.js</div>
         <p class="small">
@@ -252,7 +233,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/c-projects" target="_blank">Hashing Implementations</a>
+          <a href="https://github.com/syswraith/c-projects" target="_blank" rel="noopener noreferrer">Hashing Implementations</a>
         </h3>
         <div class="meta">Data structures • C</div>
         <p class="small">
@@ -264,7 +245,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/c-projects" target="_blank">Bus Reservation System</a>
+          <a href="https://github.com/syswraith/c-projects" target="_blank" rel="noopener noreferrer">Bus Reservation System</a>
         </h3>
         <div class="meta">Terminal application • C</div>
         <p class="small">
@@ -275,7 +256,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/python-projects" target="_blank">Dots and Boxes</a>
+          <a href="https://github.com/syswraith/python-projects" target="_blank" rel="noopener noreferrer">Dots and Boxes</a>
         </h3>
         <div class="meta">Terminal game • Python</div>
         <p class="small">
@@ -286,7 +267,7 @@
 
       <div class="card">
         <h3>
-          <a href="https://github.com/syswraith/c-projects" target="_blank">Tic Tac Toe</a>
+          <a href="https://github.com/syswraith/c-projects" target="_blank" rel="noopener noreferrer">Tic Tac Toe</a>
         </h3>
         <div class="meta">Terminal game • C</div>
         <p class="small">
@@ -296,6 +277,17 @@
       </div>
     </div>
   </div>
+
+  <footer class="site-footer">
+    <nav aria-label="Social links">
+      <ul class="nav-list">
+        <li><a href="https://github.com/syswraith">GitHub</a></li>
+        <li><a href="https://youtube.com/@syswraith">YouTube</a></li>
+        <li><a href="https://x.com/syswraith">Twitter</a></li>
+        <li><a href="mailto:syswraith@proton.me">Mail</a></li>
+      </ul>
+    </nav>
+  </footer>
 
   <script>
     // Persistent theme toggle script

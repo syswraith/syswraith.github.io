@@ -33,25 +33,23 @@
   <meta content="@syswraith" name="twitter:creator" />
   <!-- Favicon -->
   <link href="favicon.ico" rel="icon" type="image/x-icon" />
-  <!-- Optional: Dark/light adaptive favicon -->
-  <link href="favicon-light.ico" media="(prefers-color-scheme: light)" rel="icon" />
   <link href="style.css" rel="stylesheet" />
 
   <script src="https://louisabraham.github.io/nekojs/neko.js" data-autostart></script>
 </head>
 
 <body>
-  <button class="theme-toggle" id="toggleTheme">🌚</button>
+  <button class="theme-toggle" id="toggleTheme" type="button" aria-label="Toggle color theme">🌚</button>
   <div class="container">
     <img alt="syswraith avatar" class="avatar" height="300" width="300"
       src="https://avatars.githubusercontent.com/u/77088155" />
     <h1><a href="https://syswraith.com/">Aryan Karekar</a></h1>
-    <nav>
-      <a href="/projects">Projects</a> ·
-      <a href="https://syswraith.com/blog">Blog</a> ·
-      <a href="https://youtube.com/@syswraith">YouTube</a> ·
-      <a href="https://x.com/syswraith">Twitter</a> ·
-      <a href="mailto://syswraith@proton.me">Mail</a>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="https://syswraith.com/blog">Blog</a></li>
+        <li><a href="https://syswraith.com/notes">Notes</a></li>
+      </ul>
     </nav>
 
 
@@ -75,12 +73,24 @@
 <a href="https://ring.seggs.lol/redirect?from=syswraith&dir=next">next</a>
   </span>
 
+  <footer class="site-footer">
+    <nav aria-label="Social links">
+      <ul class="nav-list">
+        <li><a href="https://github.com/syswraith">GitHub</a></li>
+        <li><a href="https://youtube.com/@syswraith">YouTube</a></li>
+        <li><a href="https://x.com/syswraith">Twitter</a></li>
+        <li><a href="mailto:syswraith@proton.me">Mail</a></li>
+      </ul>
+    </nav>
+  </footer>
+
   <script>
     // Persistent theme toggle script
     const btn = document.getElementById("toggleTheme");
 
-    // Initialize theme based on localStorage only — dark is the default
-    if (localStorage.getItem("theme") === "light") {
+    // Initialize theme based on localStorage or system preferences
+    if (localStorage.getItem("theme") === "light" ||
+      (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: light)").matches)) {
       document.documentElement.classList.add("light");
       btn.textContent = "🌚";
     } else {

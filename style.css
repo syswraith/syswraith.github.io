@@ -220,3 +220,46 @@ html.light a::-moz-selection {
         width: 150px
     }
 }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    margin: 0;
+    padding: 0
+}
+
+.nav-list li + li::before {
+    content: "·";
+    margin-right: .5rem;
+    color: var(--muted)
+}
+
+.back-nav {
+    margin-bottom: 2rem
+}
+
+.projects-container {
+    margin-top: 3.5rem
+}
+
+.grid {
+    margin-top: 2rem;
+    margin-bottom: 3rem
+}
+
+.site-footer {
+    margin-top: 2rem
+}
+
+.site-footer nav {
+    margin-bottom: 0
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent-hover);
+    outline-offset: 3px
+}
