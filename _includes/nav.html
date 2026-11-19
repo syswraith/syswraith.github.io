@@ -1,0 +1,7 @@
+<nav aria-label="Primary"{% if include.class %} class="{{ include.class }}"{% endif %}>
+  <ul class="nav-list">
+    {% for item in site.data.nav %}
+      <li><a class="nav-link" href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
