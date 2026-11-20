@@ -7,13 +7,13 @@
     <loc>https://syswraith.com/projects</loc>
   </url>
   <url>
+    <loc>https://syswraith.com/jorth/</loc>
+  </url>
+  <url>
     <loc>https://syswraith.com/blog/</loc>
   </url>
   <url>
     <loc>https://syswraith.com/notes/</loc>
-  </url>
-  <url>
-    <loc>https://syswraith.com/jorth/</loc>
   </url>
   <url>
     <loc>https://syswraith.com/blog/archive/</loc>
@@ -295,19 +295,16 @@
     <loc>https://syswraith.com/blog/tags/editor/</loc>
   </url>
   <url>
-    <loc>https://syswraith.com/blog/tags/emulation/</loc>
+    <loc>https://syswraith.com/blog/tags/exif/</loc>
   </url>
   <url>
-    <loc>https://syswraith.com/blog/tags/exif/</loc>
+    <loc>https://syswraith.com/blog/tags/emulation/</loc>
   </url>
   <url>
     <loc>https://syswraith.com/blog/tags/flag/</loc>
   </url>
   <url>
     <loc>https://syswraith.com/blog/tags/forensics/</loc>
-  </url>
-  <url>
-    <loc>https://syswraith.com/blog/tags/frequency-analysis/</loc>
   </url>
   <url>
     <loc>https://syswraith.com/blog/tags/generalskills/</loc>
