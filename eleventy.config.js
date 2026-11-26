@@ -157,10 +157,11 @@ export default function (eleventyConfig) {
     .site-header, .site-footer { text-align: center; margin: 0 auto; padding: 0; }
     .site-header { padding-top: 0; }
     .site-footer { color: var(--text-muted); border-top: 0; }
-    .site-header nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .45rem .8rem; font-size: 1rem; }
+    .site-header nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .45rem .8rem; font-size: 1rem; align-items: center; }
     .site-header nav a { text-decoration: none; }
     .site-header nav a:hover { text-decoration: underline; }
-    .site-title { width: 100%; font-size: 1.3rem; margin-bottom: .35rem; }
+    .site-title { width: 100%; display: inline-flex; flex-direction: column; align-items: center; gap: .4rem; font-size: 1.3rem; margin-bottom: .35rem; }
+    .site-avatar { width: 72px; height: 72px; border-radius: 100%; margin: 0; }
     .site-rule { border: 0; border-top: 1px solid var(--border); margin: 1rem 0 0; width: 100%; }
     img, video { display: block; width: 100%; max-width: 100%; height: auto; margin: 1.25rem auto; border-radius: 8px; }
     figure { margin: 1.25rem 0; }
@@ -187,13 +188,14 @@ export default function (eleventyConfig) {
 <body>
 <header class="site-header">
   <nav>
-    <a class="site-title" href="/"><strong>syswraith</strong></a>
+    <a class="site-title" href="/"><img class="site-avatar" src="https://github.com/syswraith.png" alt="syswraith avatar"><strong>syswraith</strong></a>
     <a href="/blogs/">Blogs</a>
     <a href="/ctfs/">CTFs</a>
     <a href="/braindev/">Braindev</a>
     <a href="/useful/">Useful</a>
     <a href="/reading/">Reading</a>
     <a href="/watching/">Watching</a>
+    <a href="https://syswraith.com/notes">Notes</a>
   </nav>
   <hr class="site-rule">
 </header>
