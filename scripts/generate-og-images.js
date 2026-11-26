@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { createCanvas, loadImage } from "@napi-rs/canvas";
+import { createCanvas, loadImage, GlobalFonts } from "@napi-rs/canvas";
 import { parseDocument } from "htmlparser2";
 import { selectAll, selectOne } from "css-select";
 import { getAttributeValue, textContent } from "domutils";
@@ -15,6 +15,33 @@ const TITLE_COLOR = "#111827";
 const MUTED = "#555555";
 const AUTHOR = "Aryan Karekar";
 const SITE_NAME = "syswraith";
+const FONT_FAMILY = "DejaVu Sans";
+const FONT_CANDIDATES = [
+  "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+  "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+  "/usr/share/fonts/TTF/DejaVuSans.ttf",
+  "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf",
+  "/usr/share/fonts/dejavu/DejaVuSans.ttf",
+  "/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf",
+];
+
+function registerFonts() {
+  let registered = 0;
+  for (const file of FONT_CANDIDATES) {
+    if (!fs.existsSync(file)) continue;
+    try {
+      GlobalFonts.registerFromPath(file, FONT_FAMILY);
+      registered++;
+    } catch (e) {
+      console.warn(`font register failed for ${file}: ${e.message}`);
+    }
+  }
+  if (!registered) {
+    console.warn(`No DejaVu Sans font files found; OG text rendering may be blank on CI.`);
+  } else {
+    console.log(`Registered ${registered} font file(s) for ${FONT_FAMILY}`);
+  }
+}
 
 function walk(dir) {
   const out = [];
@@ -95,7 +122,7 @@ async function drawOg({ title, desc }, favicon) {
 
   const maxWidth = WIDTH - PAD * 2;
   ctx.fillStyle = TITLE_COLOR;
-  ctx.font = "bold 68px sans-serif";
+  ctx.font = `bold 68px "${FONT_FAMILY}", sans-serif`;
   const titleLines = wrapText(ctx, title, maxWidth, 3);
   let y = PAD + 68;
   for (const line of titleLines) {
@@ -105,13 +132,13 @@ async function drawOg({ title, desc }, favicon) {
 
   y += 8;
   ctx.fillStyle = MUTED;
-  ctx.font = "32px sans-serif";
+  ctx.font = `32px "${FONT_FAMILY}", sans-serif`;
   ctx.fillText(`by ${AUTHOR}`, PAD, y);
   y += 64;
 
   if (desc) {
     ctx.fillStyle = MUTED;
-    ctx.font = "italic 30px sans-serif";
+    ctx.font = `italic 30px "${FONT_FAMILY}", sans-serif`;
     const descLines = wrapText(ctx, clip(desc, 220), maxWidth, 4);
     for (const line of descLines) {
       ctx.fillText(line, PAD, y);
@@ -129,6 +156,7 @@ async function drawOg({ title, desc }, favicon) {
 }
 
 async function main() {
+  registerFonts();
   if (!fs.existsSync(OUT_DIR)) throw new Error(`Missing ${OUT_DIR}. Run eleventy first.`);
   let favicon = null;
   if (fs.existsSync(FAVICON)) {
