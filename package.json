@@ -7,10 +7,11 @@
     "bun": ">=1.4.5"
   },
   "scripts": {
-    "build": "eleventy && bun run sitemap",
+    "build": "eleventy && bun run og && bun run sitemap",
     "dev": "eleventy --serve --port=8000",
     "clean": "rm -rf _site",
-    "sitemap": "bun scripts/generate-sitemap.js"
+    "sitemap": "bun scripts/generate-sitemap.js",
+    "og": "bun scripts/generate-og-images.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
@@ -18,6 +19,7 @@
   "dependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@extractus/oembed-extractor": "^6.0.1",
+    "@napi-rs/canvas": "^0.1.65",
     "@sindresorhus/slugify": "^2.2.1",
     "katex": "^0.19.1",
     "markdown-it-texmath": "^1.0.0"
