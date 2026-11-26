@@ -213,6 +213,9 @@ export default function (eleventyConfig) {
     const data = { ...readFrontMatter(this.page?.inputPath), ...(this.data || {}), ...(this.page?.data || {}) };
     const titleBase = data.title || (this.page.fileSlug === "" ? "Home" : this.page.fileSlug);
     const fullTitle = titleBase === "Home" ? `${SITE_NAME} - ${SITE_AUTHOR}` : `${titleBase} | ${SITE_NAME}`;
+    if (!/^\s*<h1[\s>]/i.test(body) && titleBase) {
+      body = `<h1>${escapeHtml(titleBase)}</h1>\n${body}`;
+    }
     const description = clipText(
       data.description || data.socialDescription || plainText(body) || DEFAULT_DESCRIPTION,
       200
