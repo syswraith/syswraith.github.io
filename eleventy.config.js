@@ -115,6 +115,7 @@ function rewriteInternalUrls(html, page) {
     if (!resolved.startsWith("/")) resolved = "/" + resolved;
     resolved = slugifyInternalPath(resolved);
     if (resolved.endsWith("/index.html")) resolved = resolved.slice(0, -"/index.html".length) + "/";
+    if (!path.posix.extname(resolved) && !resolved.endsWith("/")) resolved += "/";
     if (PATH_PREFIX && resolved.startsWith(PATH_PREFIX)) return `${attr}="${resolved}${suffix}"`;
     return `${attr}="${withPrefix(resolved)}${suffix}"`;
   });
@@ -176,7 +177,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "public/fonts": "fonts" });
   eleventyConfig.addPassthroughCopy({ "public/.nojekyll": ".nojekyll" });
   eleventyConfig.addPassthroughCopy({ "public/favicon.ico": "favicon.ico" });
-  eleventyConfig.addPassthroughCopy({ "public/CNAME": "CNAME" });
   eleventyConfig.addPassthroughCopy("content/**/*.{png,jpg,jpeg,gif,webp,svg,ico,pdf,txt,xml,webm,mp4,mp3}");
   eleventyConfig.on("eleventy.after", async ({ dir }) => {
     const srcRoot = path.resolve(dir.input);
