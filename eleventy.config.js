@@ -299,7 +299,7 @@ export default function (eleventyConfig) {
     <a class="site-title" href="/"><img class="site-avatar" src="https://github.com/syswraith.png" alt="syswraith avatar"><strong>syswraith</strong></a>
     <a href="/projects/">Projects</a>
     <a href="/blogs/">Blog</a>
-    <a href="https://syswraith.com/notes">Notes</a>
+    <a href="/notes/">Notes</a>
   </nav>
   <hr class="site-rule">
 </header>

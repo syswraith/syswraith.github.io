@@ -14,7 +14,8 @@
     "og": "bun scripts/generate-og-images.js"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "@geosuite/sitemap-builder": "0.3.6"
   },
   "dependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",

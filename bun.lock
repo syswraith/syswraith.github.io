@@ -14,6 +14,7 @@
       },
       "devDependencies": {
         "@11ty/eleventy": "^3.1.2",
+        "@geosuite/sitemap-builder": "0.3.6",
       },
     },
   },
@@ -41,6 +42,8 @@
     "@11ty/recursive-copy": ["@11ty/recursive-copy@4.0.6", "", { "dependencies": { "brace-expansion": "^1.1.21", "errno": "^1.0.0", "junk": "^3.1.0", "slash": "^3.0.0" } }, "sha512-+mdqG79jXufZnY0nD/ZWOsT7i8lxqXRtaO0TotpV4fD3qrHlPonEz2izTsbENAlzpsq5+QpwuHnH4RZoalx44g=="],
 
     "@extractus/oembed-extractor": ["@extractus/oembed-extractor@6.0.1", "", { "dependencies": { "linkedom": "^0.18.15" } }, "sha512-utkNk85MtdHWq4P29dh/48M8R2DTs5xpL1jqBFD6wWBrr3iDWt2r0qzadv7erdiw/wpqUgZ6BTabdwAZt81Afw=="],
+
+    "@geosuite/sitemap-builder": ["@geosuite/sitemap-builder@0.3.6", "", { "bin": { "sitemap-builder": "bin/cli.js", "geosuite-sitemap-builder": "bin/cli.js" } }, "sha512-mBZIgCtrQdOe0zLrWwpqzz0DBZpIQUzcV66VKX/poGbIPeqhcsMXkYikfEybTyWSbjre8RPysP641ApHvzPLKw=="],
 
     "@napi-rs/canvas": ["@napi-rs/canvas@0.1.100", "", { "optionalDependencies": { "@napi-rs/canvas-android-arm64": "0.1.100", "@napi-rs/canvas-darwin-arm64": "0.1.100", "@napi-rs/canvas-darwin-x64": "0.1.100", "@napi-rs/canvas-linux-arm-gnueabihf": "0.1.100", "@napi-rs/canvas-linux-arm64-gnu": "0.1.100", "@napi-rs/canvas-linux-arm64-musl": "0.1.100", "@napi-rs/canvas-linux-riscv64-gnu": "0.1.100", "@napi-rs/canvas-linux-x64-gnu": "0.1.100", "@napi-rs/canvas-linux-x64-musl": "0.1.100", "@napi-rs/canvas-win32-arm64-msvc": "0.1.100", "@napi-rs/canvas-win32-x64-msvc": "0.1.100" } }, "sha512-xglYA6q3XO5P3BNJYxVZ1IV7DLVjp1Py6nwag88YntrS+3vKHyYcMqXVS4ZztJmwz2uGvz1FWhI/4LgbR5uQDA=="],
 
