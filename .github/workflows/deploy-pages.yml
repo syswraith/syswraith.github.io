@@ -32,6 +32,7 @@ jobs:
       - name: Build
         env:
           PATH_PREFIX: ${{ vars.PATH_PREFIX || '' }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://syswraith.com' }}
         run: bun run build
 
       - name: Upload Pages artifact
