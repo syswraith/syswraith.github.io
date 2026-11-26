@@ -273,11 +273,7 @@ export default function (eleventyConfig) {
     .embed-frame iframe, .embed-frame object, .embed-frame embed { position: absolute; inset: 0; width: 100% !important; height: 100% !important; border: 0; }
     .embed-twitter { display: flex; justify-content: center; padding: .5rem 0; }
     .embed-twitter .twitter-tweet, .embed-twitter .twitter-tweet-rendered, .embed-twitter iframe { margin: 0 auto !important; max-width: 550px !important; width: 100% !important; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-    .card { border: 1px solid var(--border); border-radius: 10px; padding: 1rem; background: var(--background-alt); }
-    .card h3 { margin: 0 0 .35rem; }
-    .card .meta { color: var(--text-muted); font-size: .9rem; margin-bottom: .5rem; }
-    .card .small { margin: 0; font-size: .95rem; }
+
     pre[class*="language-"] { border-radius: 8px; padding: 1rem; overflow-x: auto; }
     code[class*="language-"], pre[class*="language-"] { font-size: .95em; }
     .token.comment,.token.prolog,.token.doctype,.token.cdata { color: #6a737d; }
@@ -312,7 +308,7 @@ ${body}
     <a href="https://github.com/syswraith">GitHub</a>
     <a href="https://youtube.com/@syswraith">YouTube</a>
     <a href="https://x.com/syswraith">Twitter</a>
-    <a href="mailto:syswraith@proton.me">Mail</a>
+    <a href="mailto:syswraith@proton.me">syswraith@proton.me</a>
   </nav>
 </footer>
 </body>
