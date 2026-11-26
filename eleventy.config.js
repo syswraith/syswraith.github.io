@@ -100,6 +100,7 @@ export default function (eleventyConfig) {
     const dir = parts.map((p) => slugify(p)).join("/");
     if (file.toLowerCase() === "index") return `/${dir}/index.html`;
     const slug = slugify(file);
+    if (!dir && slug === "404") return "/404.html";
     return dir ? `/${dir}/${slug}/index.html` : `/${slug}/index.html`;
   });
 
