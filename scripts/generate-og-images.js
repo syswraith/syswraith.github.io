@@ -1,8 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createCanvas, loadImage } from "@napi-rs/canvas";
+import { parseDocument } from "htmlparser2";
+import { selectAll, selectOne } from "css-select";
+import { getAttributeValue, textContent } from "domutils";
 
-const SITE_URL = (process.env.SITE_URL || "https://syswraith.com").replace(/\/+$/, "");
 const OUT_DIR = path.resolve("_site");
 const FAVICON = path.resolve("public/favicon.ico");
 const WIDTH = 1200;
@@ -24,29 +26,19 @@ function walk(dir) {
   return out;
 }
 
-function stripTags(html = "") {
-  return html
-    .replace(/<script[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/\s+/g, " ")
-    .trim();
+function normText(value = "") {
+  return String(value).replace(/\s+/g, " ").trim();
 }
 
 function clip(text, max = 180) {
-  if (!text) return "";
-  if (text.length <= max) return text;
-  return text.slice(0, max).replace(/\s+\S*$/, "").replace(/[.,;:]+$/, "") + "…";
+  const t = normText(text);
+  if (!t) return "";
+  if (t.length <= max) return t;
+  return t.slice(0, max).replace(/\s+\S*$/, "").replace(/[.,;:]+$/, "") + "…";
 }
 
 function wrapText(ctx, text, maxWidth, maxLines) {
-  const words = (text || "").split(/\s+/).filter(Boolean);
+  const words = normText(text).split(/\s+/).filter(Boolean);
   const lines = [];
   let line = "";
   for (const word of words) {
@@ -70,19 +62,28 @@ function wrapText(ctx, text, maxWidth, maxLines) {
   return lines;
 }
 
-function metaContent(html, name, attr = "name") {
-  const re = new RegExp(`<meta[^>]+${attr}=["']${name}["'][^>]+content=["']([\\s\\S]*?)["'][^>]*>`, "i");
-  const re2 = new RegExp(`<meta[^>]+content=["']([\\s\\S]*?)["'][^>]+${attr}=["']${name}["'][^>]*>`, "i");
-  const m = html.match(re) || html.match(re2);
-  return m ? stripTags(m[1]) : "";
+function metaByName(dom, name) {
+  const nodes = selectAll(`meta[name="${name}"], meta[property="${name}"]`, dom);
+  for (const node of nodes) {
+    const content = normText(getAttributeValue(node, "content"));
+    if (content) return content;
+  }
+  return "";
 }
 
 function pageInfo(file) {
   const html = fs.readFileSync(file, "utf8");
-  const title = stripTags((html.match(/<title>([\s\S]*?)<\/title>/i) || [, ""])[1]) || SITE_NAME;
-  const desc = metaContent(html, "description") || metaContent(html, "og:description", "property") || "";
+  const dom = parseDocument(html);
+  const titleNode = selectOne("title", dom);
+  const title = normText(titleNode ? textContent(titleNode) : "") || SITE_NAME;
+  const desc =
+    metaByName(dom, "description") ||
+    metaByName(dom, "og:description") ||
+    metaByName(dom, "twitter:description") ||
+    "";
   const rel = path.relative(OUT_DIR, file).split(path.sep).join("/");
-  const outPng = path.join(path.dirname(file), "og-image.png");
+  let outPng = path.join(path.dirname(file), "og-image.png");
+  if (rel === "404.html") outPng = path.join(OUT_DIR, "404", "og-image.png");
   return { title, desc, outPng, rel };
 }
 
@@ -139,6 +140,7 @@ async function main() {
   for (const file of htmlFiles) {
     const info = pageInfo(file);
     try {
+      fs.mkdirSync(path.dirname(info.outPng), { recursive: true });
       const png = await drawOg(info, favicon);
       fs.writeFileSync(info.outPng, png);
       count++;
