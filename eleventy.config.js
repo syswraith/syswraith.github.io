@@ -176,6 +176,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "public/fonts": "fonts" });
   eleventyConfig.addPassthroughCopy({ "public/.nojekyll": ".nojekyll" });
   eleventyConfig.addPassthroughCopy({ "public/favicon.ico": "favicon.ico" });
+  eleventyConfig.addPassthroughCopy({ "public/CNAME": "CNAME" });
   eleventyConfig.addPassthroughCopy("content/**/*.{png,jpg,jpeg,gif,webp,svg,ico,pdf,txt,xml,webm,mp4,mp3}");
   eleventyConfig.on("eleventy.after", async ({ dir }) => {
     const srcRoot = path.resolve(dir.input);
