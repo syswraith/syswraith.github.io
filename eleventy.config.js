@@ -308,7 +308,7 @@ ${body}
     <a href="https://github.com/syswraith">GitHub</a>
     <a href="https://youtube.com/@syswraith">YouTube</a>
     <a href="https://x.com/syswraith">Twitter</a>
-    <a href="mailto:syswraith@proton.me">syswraith@proton.me</a>
+    <a href="mailto:syswraith@proton.me">Email</a>
   </nav>
 </footer>
 </body>
