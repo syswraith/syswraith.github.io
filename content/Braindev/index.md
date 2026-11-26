@@ -1,0 +1,80 @@
+---
+title: Braindev
+description: Problem solutions and notes.
+---
+
+# Braindev
+
+## CodeChef
+
+* [BOMBTHEBASE](/braindev/codechef/bombthebase/)
+* [CAKEMAKE](/braindev/codechef/cakemake/)
+* [DLFEE](/braindev/codechef/dlfee/)
+* [LASTLEVELS](/braindev/codechef/lastlevels/)
+* [LOCKDRAW](/braindev/codechef/lockdraw/)
+* [LUCKYFR](/braindev/codechef/luckyfr/)
+* [MINIPIZZA](/braindev/codechef/minipizza/)
+* [MISSP](/braindev/codechef/missp/)
+* [MXLED](/braindev/codechef/mxled/)
+* [Neck](/braindev/codechef/nec/)
+* [PALINDRCHECK](/braindev/codechef/palindrcheck/)
+* [PASSORFAIL](/braindev/codechef/passorfail/)
+* [PASSWD](/braindev/codechef/passwd/)
+* [RECTSQ](/braindev/codechef/rectsq/)
+* [SELFDEF](/braindev/codechef/selfdef/)
+* [SUBSCRIBE_](/braindev/codechef/subscribe/)
+* [Two Strings](/braindev/codechef/twostr/)
+* [TWOVSTEN](/braindev/codechef/twovsten/)
+* [WATERCOOLER2](/braindev/codechef/watercooler-2/)
+* [WCC](/braindev/codechef/wcc/)
+
+## Codeforces
+
+* [1030A](/braindev/codeforces/1030-a/)
+* [110A](/braindev/codeforces/110-a/)
+* [112A](/braindev/codeforces/112-a/)
+* [116A](/braindev/codeforces/116-a/)
+* [141A](/braindev/codeforces/141-a/)
+* [155A](/braindev/codeforces/155-a/)
+* [1742A](/braindev/codeforces/1742-a/)
+* [1903A](/braindev/codeforces/1903-a/)
+* [1A](/braindev/codeforces/1-a/)
+* [2065A](/braindev/codeforces/2065-a/)
+* [2065B](/braindev/codeforces/2065-b/)
+* [2093A](/braindev/codeforces/2093-a/)
+* [236A](/braindev/codeforces/236-a/)
+* [263A](/braindev/codeforces/263-a/)
+* [266A](/braindev/codeforces/266-a/)
+* [271A](/braindev/codeforces/271-a/)
+* [281A](/braindev/codeforces/281-a/)
+* [282A](/braindev/codeforces/282-a/)
+* [339A](/braindev/codeforces/339-a/)
+* [344A](/braindev/codeforces/344-a/)
+* [41A](/braindev/codeforces/41-a/)
+* [467A](/braindev/codeforces/467-a/)
+* [486A](/braindev/codeforces/486-a/)
+* [50A](/braindev/codeforces/50-a/)
+* [520A](/braindev/codeforces/520-a/)
+* [546A](/braindev/codeforces/546-a/)
+* [59A](/braindev/codeforces/59-a/)
+* [617A](/braindev/codeforces/617-a/)
+* [705A](/braindev/codeforces/705-a/)
+* [734A](/braindev/codeforces/734-a/)
+* [791A](/braindev/codeforces/791-a/)
+* [977A](/braindev/codeforces/977-a/)
+
+## LeetCode
+
+* [Leetcode 1260: Shift 2D Grid](/braindev/leetcode/1260/)
+* [Leetcode 14: Longest Common Prefix](/braindev/leetcode/14/)
+* [Leetcode 1629: Slowest Key](/braindev/leetcode/1629/)
+* [Leetcode 1903: Largest Odd Number in String](/braindev/leetcode/1903/)
+* [Leetcode 2190: Most Frequent Number Following Key In an Array](/braindev/leetcode/2190/)
+* [Leetcode 2465: Number of Distinct Averages](/braindev/leetcode/2465/)
+* [Leetcode 3622: Check Divisibility by Digit Sum and Product](/braindev/leetcode/3622/)
+* [Leetcode 3718: Smallest Missing Multiple of K](/braindev/leetcode/3718/)
+* [Leetcode 3731: Find Missing Elements](/braindev/leetcode/3731/)
+* [Leetcode 3834: Merge Adjacent Equal Elements](/braindev/leetcode/3834/)
+* [Leetcode 66: Plus One](/braindev/leetcode/66/)
+* [Leetcode 744: Find Smallest Letter Greater Than Target](/braindev/leetcode/744/)
+* [Leetcode 860: Lemonade Change](/braindev/leetcode/860/)
