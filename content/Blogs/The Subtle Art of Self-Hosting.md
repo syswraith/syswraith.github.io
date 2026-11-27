@@ -23,10 +23,8 @@ date: 2026-10-20
 modified: 2026-10-20
 lastmod: 2026-10-20
 ---
-\
-![achievement](images/homelab/achievement.png)
 
-I've been trying to build a proper homelab for a long, long time.
+![achievement](images/homelab/achievement.png)
 
 https://x.com/syswraith/status/1950433995701031361
 
